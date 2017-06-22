@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: sharewin_production
-  username: sharewin
+  username: sharewin_dev
   password: <%= ENV['sharewin_DATABASE_PASSWORD'] %>
