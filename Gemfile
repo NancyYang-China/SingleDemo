@@ -60,16 +60,18 @@ gem 'font-awesome-sass'
 
 # CKEditor is a WYSIWYG text editor designed to simplify web content creation
 gem 'ckeditor'
+gem 'listen', '~> 3.0.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'listen', '~> 3.0.5'
-  gem 'web-console', '>= 3.3.0'
+   gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'rails-erd'
   gem 'spring'
