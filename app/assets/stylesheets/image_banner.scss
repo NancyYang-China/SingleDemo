@@ -1,0 +1,44 @@
+.banner {
+  position: relative;
+  min-width: 1200px;
+  width: 100%;
+  .full-width {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+  #banner-tag {
+    position: absolute;
+    height: 55px;
+    left: 0px;
+    bottom: 6px;
+    z-index: 1;
+    color: #ffffff;
+    font-size: 38px;
+    line-height: 41px;
+    animation: banner-tag 2s forwards;
+    animation-delay: .1s;
+  }
+  @keyframes banner-tag {
+    100% { left: 144px; }
+  }
+  #line {
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    left: 0px;
+    bottom: 0px;
+    background-color: #ab1e11;
+    border-color: #dd191d;
+    border-width: 1px;
+    border-style: solid;
+    opacity: 0.7;
+    z-index: 1;
+    animation: line 2s forwards;
+    animation-delay: .2s;
+    animation-iteration-count: 1;
+  }
+  @keyframes line {
+    100% { width: 100% }
+  }
+}

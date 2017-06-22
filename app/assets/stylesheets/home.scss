@@ -1,0 +1,90 @@
+.carousel-inner {
+  width: 100%;
+  min-width: 1200px;
+  min-height: 633.3px;
+  height: auto;
+  position: relative;
+  div {
+    position: relative;
+    .content {
+      display: flex;
+      flex-direction: column;
+      display: -webkit-flex;
+      -webkit-flex-direction: column;
+      display: -ms-flex;
+      -ms-flex-direction: column;
+      position: absolute;
+      .title {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Pingfang SC", "Microsoft Yahei", sans-serif;
+        color: #101010;
+        line-height: 73px;
+        font-size: 50px;
+        text-align: center;
+        white-space: pre-wrap;
+      }
+      .horizontal-divider {
+        width: 196px;
+        height: 1px;
+        background: #101010;
+        align-self: center;
+      }
+      .sub-title-21 {
+        color: #101010;
+        font-size: 21px;
+        line-height: 30px;
+        margin-top: 20px;
+        text-align: center;
+        white-space: pre-wrap;
+      }
+      .sub-title-16 {
+        color: #101010;
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 20px;
+        text-align: center;
+        white-space: pre-wrap;
+      }
+    }
+    .banner0 {
+      left: 228px;
+      top: 300px;
+    }
+    .banner1 {
+      top: 200px;
+      right: 75px;
+    }
+    .banner2 {
+      top: 200px;
+      left: 130px;
+    }
+    .banner3 {
+      display: flex;
+      display: -webkit-flex;
+      display: -ms-flex;
+      position: absolute;
+      top: 246px;
+      right: 138px;
+      .sub-title {
+        color: #C42243;
+        font-size: 30px;
+        line-height: 44px;
+        margin-bottom: -8px;
+        text-align: center;
+        white-space: pre-wrap;
+        align-self: flex-end;
+      }
+      .vertical-divider {
+        width: 1px;
+        height: 161px;
+        background: #fff;
+        align-self: center;
+        margin-left: 24px;
+        margin-right: 24px;
+      }
+      .icon {
+        width: 138px;
+        height: 161px;
+      }
+    }
+  }
+}

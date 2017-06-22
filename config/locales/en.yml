@@ -1,0 +1,85 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+  copyright: "版权声明  Copyright@ 盛宇基金2017"
+
+  created_at: "Created at"
+  updated_at: "Updated at"
+
+  news_category:
+    point: "Point View"
+    news: "News"
+    szh: "ShengZiHui"
+
+  activerecord:
+    models:
+      info: "About Sharewin"
+      partner: "Partner"
+      investment: "Investment"
+      investment_category: "Investment Category"
+      news: "News"
+      shengzihui: "Sheng Zi Hui"
+    attributes:
+      info:
+        title: "Title"
+        description: "Description"
+        asset: "Asset"
+      partner:
+        name: "Name"
+        logo: "Logo"
+        website: "Website"
+        description: "Description"
+      investment:
+        title: "Title"
+        logo: "Logo"
+        description: "Description"
+        investment_category: "Investment Category"
+      investment_category:
+        name: "Name"
+        investment: "Investment"
+      news:
+        title: "Title"
+        description: "Description"
+        content: "Content"
+        category: "Category"
+        image1: "Asset"
+        image2: "Asset"
+        image3: "Asset"
+        image4: "Asset"
+        image5: "Asset"
+        image6: "Asset"
+      banner:
+        title: "Title"
+        sub_title: "Sub Title"
+        icon: "Icon"
+        image: "Banner"
+      shengzihui:
+        title: "Title"
+        content: "Content"
+        image1: "Asset"
+        image2: "Asset"
+        image3: "Asset"
+        image4: "Asset"
+        image5: "Asset"
+        image6: "Asset"
+ 

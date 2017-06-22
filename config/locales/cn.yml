@@ -1,0 +1,93 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+zh-CN:
+  hello: "你好，世界"
+  copyright: "版权声明  Copyright@ 盛宇基金2017"
+  created_at: "创建时间"
+  updated_at: "最后修改时间"
+
+  news_category:
+    point: "观点分享"
+    news: "公司新闻"
+    szh: "盛资汇"
+  
+  admin:
+    actions:
+      dashboard:
+        title: "Site Administration"
+
+  activerecord:
+    models:
+      info: "关于盛宇"
+      partner: "合作伙伴"
+      investment: "投资组合"
+      investment_category: "投资行业类别"
+      news: "新闻动态"
+      shengzihui: "盛资汇"
+    attributes:
+      info:
+        title: "标题"
+        description: "详情"
+        asset: "图片"
+      partner:
+        name: "名称"
+        logo: "标志"
+        website: "网址"
+        description: "详情"
+      investment:
+        title: "标题"
+        logo: "标志"
+        description: "详情"
+        investment_category: "行业类别"
+      investment_category:
+        name: "名称"
+        investment: "投资组合"
+      news:
+        title: "标题"
+        description: "详情"
+        content: "内容"
+        category: "类型"
+        created_at: "创建时间"
+        updated_at: "最后修改时间"
+        news: 新闻动态
+        point: "观点分享"
+        image1: "图片"
+        image2: "图片"
+        image3: "图片"
+        image4: "图片"
+        image5: "图片"
+        image6: "图片"
+      banner:
+        title: "标题"
+        sub_title: "子标题"
+        icon: "图标"
+        image: "banner"
+      shengzihui:
+        title: "标题"
+        content: "内容"
+        created_at: "创建时间"
+        image1: "图片"
+        image2: "图片"
+        image3: "图片"
+        image4: "图片"
+        image5: "图片"
+        image6: "图片"

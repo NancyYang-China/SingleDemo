@@ -1,0 +1,38 @@
+#myCarousel {
+  .full-width {
+    width: 100%;
+    height: auto;
+    min-width: 1200px;
+    min-height: 633.3px;
+    object-fit: cover;
+  }
+  .carousel-indicators {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    z-index: 1;
+    width: 60%;
+    margin-left: -30%;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+  }
+  .carousel-indicators li {
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    cursor: pointer;
+    margin-left: 6px;
+    margin-right: 6px; 
+    border-color: #888;
+    background-color: #888;
+  }
+  .carousel-indicators .active {
+    border: 0px;
+    width: 50px;
+    height: 4px;
+    margin-left: 6px;
+    margin-right: 6px;
+    background-color: #444444;
+  }
+}

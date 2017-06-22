@@ -1,0 +1,112 @@
+.szh {
+  background: #f0f0f2;
+  min-width: 1200px;
+  height: auto;
+  display: inline-block;
+  .banner {
+    position: relative;
+    min-width: 1200px;
+    width: 100%;
+    .full-width {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
+    .banner-tag {
+      position: absolute;
+      left: 30px;
+      bottom: 0px;
+      z-index: 1;
+      color: #fff;
+      font-size: 30px;
+      line-height: 44px;
+      display: flex;
+      flex-direction: row;
+      .icon {
+        width: 103px;
+        height: 116px;
+        display: block;
+        margin: 12px;
+      }
+      .vertical-divider {
+        width: 1px;
+        height: 116px;
+        background: #fff;
+        align-self: center;
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+      .sub-title {
+        margin-top: 20px;
+        white-space: pre-wrap;
+      }
+    }
+  }
+  .szh-list {
+    margin-left: 156px;
+    margin-right: 146px;
+    min-width: 898px;
+    position: relative;
+    .szh-item {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      height: auto;
+      .top-content {
+        margin-top: 42px;
+        display: flex;
+        flex-direction: row;
+        div {
+          width: 3px;
+          height: 17px;
+          margin-top: 3px;
+          background: #dd191d;
+          margin-right: 24px;
+        }
+        p {
+          padding: 0px;
+          font-size: 16px;
+          line-height: 23px;
+          color: #101010;
+        }
+      }
+      .szh-item-content {
+        display: flex;
+        flex-direction: row;
+        .main-content {
+          margin-left: 30px;
+          margin-right: 80px;
+          .title {
+            color: #101010;
+            font-size: 28px;
+            line-height: 41px;
+          }
+          .content {
+            color: #5c5c5c;
+            font-size: 20px;
+            line-height: 41px;
+          }
+        }
+        .assets {
+          display: flex;
+          flex-direction: column;
+          width: 390px;
+          height: auto;
+          .asset {
+            display: block;
+            width: 390px;
+            height: 246px;
+            margin-bottom: 78px;
+          }
+        }
+      }
+      .horizontal-divider {
+        width: 100%;
+        height: 2px;
+        margin-top: 112px;
+        margin-bottom: 2px;
+        background-color: #fff;
+      }
+    }
+  }
+}
