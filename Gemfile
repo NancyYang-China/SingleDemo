@@ -61,13 +61,13 @@ gem 'font-awesome-sass'
 # CKEditor is a WYSIWYG text editor designed to simplify web content creation
 gem 'ckeditor'
 gem 'listen', '~> 3.0.5'
-gem 'passenger'
+gem 'capistrano-rails'
+gem 'capistrano'
+gem 'capistrano-passenger'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
-  gem 'capistrano-rails'
-  gem 'capistrano-rvm'
 end
 
 group :development do
