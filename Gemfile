@@ -61,9 +61,6 @@ gem 'font-awesome-sass'
 # CKEditor is a WYSIWYG text editor designed to simplify web content creation
 gem 'ckeditor'
 gem 'listen', '~> 3.0.5'
-gem 'capistrano-rails'
-gem 'capistrano'
-gem 'capistrano-passenger'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -77,6 +74,12 @@ group :development do
   gem 'rails-erd'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  
+  gem 'capistrano', '~> 3.7', '>= 3.7.1'
+  gem 'capistrano-rails', '~> 1.2'
+  gem 'capistrano-passenger', '~> 0.2.0'
+  # Add this if you're using rbenv
+  gem 'capistrano-rbenv', '~> 2.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

@@ -1,8 +1,8 @@
 # config valid only for current version of Capistrano
 lock "3.8.1"
 
-set :application, "Sharewin"
-set :repo_url, "git@211.159.220.173:/home/gitrepo/sharewin.web.git"
+set :application, "sharewin"
+set :repo_url, "git@github.com:NancyYang-China/SingleDemo.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
