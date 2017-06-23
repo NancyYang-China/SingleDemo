@@ -22,3 +22,7 @@
 
 # Ignore public uploads
 public/uploads/
+
+config/database.yml
+config/secrets.yml
+
