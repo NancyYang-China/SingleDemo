@@ -17,7 +17,7 @@ class ContactUsPage extends React.Component {
         <div className="items" onMouseOut={e=> {
             this.setState({activeIndex: 0});
           }}>
-          <ContactItem icon="fa fa-envelope" active={activeIndex===1}
+          <ContactItem icon="fa fa-envelope" active={activeIndex===1} href=""
             name="项目合作"
             onMouseOver={e=> {
               this.setState({activeIndex: 1});
@@ -37,14 +37,14 @@ class ContactUsPage extends React.Component {
                 <span className="text" style={{fontSize: 15, fontWeight: "bold"}}>点击了解更多职位详情</span>
               </div>
           </ContactItem>
-          <ContactItem icon="fa fa-weixin" active={activeIndex===3}
+          <ContactItem icon="fa fa-weixin" active={activeIndex===3} href=""
             name="公司微信"
             onMouseOver={e=> {
               this.setState({activeIndex: 3});
             }}>
             <img style={{width:132, height:132, marginTop: 20}} src="assets/images/qr_code.jpeg"/>
           </ContactItem>
-          <ContactItem icon="fa fa-phone-square" active={activeIndex===4}
+          <ContactItem icon="fa fa-phone-square" active={activeIndex===4} href=""
             name="联系我们"
             onMouseOver={e=> {
               this.setState({activeIndex: 4});
