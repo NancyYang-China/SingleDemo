@@ -1,3 +1,73 @@
-// Place all the styles related to the recruitment controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.recruitment {
+  background: #f0f0f2;
+  min-width: 1200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  .full-width {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .recruitment-content {
+    width: 800px;
+    height: auto;
+    align-self: center;
+    .recruitment-title {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 800px;
+      background: #bbbbbb;
+      color: #757575;
+      font-size: 30px;
+      line-height: 90px;
+      text-align: center;
+    }
+    .recruitment-list {
+      display: flex;
+      flex-direction: column;
+      width: 800px;
+      background: #fff;
+      padding-left: 66px;
+      padding-right: 66px;
+      padding-top: 54px;
+      padding-bottom: 300px;
+      margin-bottom: 120px;
+      .recruitment-item {
+        .title {
+          color: #101010;
+          font-size: 24px;
+          line-height: 35px;
+          white-space: pre-wrap;
+        }
+        .sub-title {
+          color: #757575;
+          font-size: 20px;
+          line-height: 29px;
+          margin-top: 40px;
+          margin-bottom: 32px;
+        }
+        .sub-content {
+          color: #101010;
+          font-size: 17px;
+          line-height: 30px;
+        }
+        .email {
+          margin-top: 54px;
+          color: #101010;
+          font-size: 17px;
+          line-height: 25px;
+          font-weight: bold;
+          white-space: pre-wrap;
+        }
+        .horizontal-divider {
+          width: 100%;
+          height: 1px;
+          background: #525e71;
+          margin-top: 80px;
+          margin-bottom: 80px;
+        }
+      }
+    }
+  }
+}

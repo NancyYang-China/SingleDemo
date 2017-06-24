@@ -25,14 +25,14 @@ class ContactUsPage extends React.Component {
             <p style={{fontSize: 16, fontWeight: "bold" , color: "#a80309", marginTop: 14}}>BP 请发至</p>
             <p style={{fontSize: 16, color: "#a80309"}}>BP info@sharewin.com</p>
           </ContactItem>
-          <ContactItem icon="fa fa-users" active={activeIndex===2}
+          <ContactItem icon="fa fa-users" active={activeIndex===2} href="/recruitment"
             name="招聘职位"
             onMouseOver={e=> {
               this.setState({activeIndex: 2});
             }}>
               <p style={{fontSize: 16, fontWeight: "bold" , color: "#a80309", marginTop: 14}}>职位申请请发至</p>
               <p style={{fontSize: 16, color: "#a80309"}}>BP info@sharewin.com</p>
-              <div className="widget" onClick={()=>{}}>
+              <div href="recruitment" className="widget">
                 <span className="icon fa fa-plus" style={{fontSize: 18, fontWeight: "bold"}}></span>
                 <span className="text" style={{fontSize: 15, fontWeight: "bold"}}>点击了解更多职位详情</span>
               </div>

@@ -9,14 +9,14 @@ class ContactItem extends React.Component {
   }
 
   render() {
-    const { name, icon, active, children, onMouseOver } = this.props;
+    const { name, icon, active, children, onMouseOver, href } = this.props;
     const color = active ? "#a80309" : "#757575"
     const nameview = active ? null : (
       <p style={{fontSize: 12, color: "#757575", marginTop: 12}}>{name}</p>
     );
 
     return (
-      <a className="item" onMouseOver={e=> onMouseOver && onMouseOver(e)}>
+      <a href={href} className="item" onMouseOver={e=> onMouseOver && onMouseOver(e)}>
         <div style={{borderColor: color}} className="circle active">
           <span style={{color: color}} className={icon}></span>
         </div>
