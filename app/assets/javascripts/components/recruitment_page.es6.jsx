@@ -34,7 +34,9 @@ class RecruitmentPage extends React.Component {
   render() {
     return (
       <div className="recruitment">
-        <img className="full-width" src="assets/images/contact_us_badge.jpeg"/>
+        <div className="full-width">
+          <img className="image" src="assets/images/contact_us_badge.jpeg"/>
+        </div>
         <div className="recruitment-content">
           <p className="recruitment-title">职位招聘</p>
           {this._renderList()}
