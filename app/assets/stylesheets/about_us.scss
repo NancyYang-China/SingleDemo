@@ -38,14 +38,17 @@
         -webkit-justify-content: space-between;
         .content {
           color: #5c5c5c;
+          flex: 1;
+          -webkit-flex: 1;
           min-width: 476px;
+          height: auto;
           font-size: 20px;
           line-height: 41px;
           margin-left: 18px;
           margin-right: 54px;
         }
         .asset {
-          display: block;
+          display: inline-block;
           width: 396px;
           height: 246px;
           object-fit: cover;

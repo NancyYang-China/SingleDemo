@@ -24,7 +24,8 @@ zh-CN:
   copyright: "版权声明  Copyright@ 盛宇基金2017"
   created_at: "创建时间"
   updated_at: "最后修改时间"
-
+  sharewin: "盛宇投资"
+  
   news_category:
     point: "观点分享"
     news: "公司新闻"
