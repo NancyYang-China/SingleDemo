@@ -75,13 +75,18 @@ class InvestmentPage extends React.Component {
         <div className="modal-content">
           <span className="close">&times;</span>
           <div className="investment-view">
-            <div className="image">
+            <a href={investment.website} target="_blank" className="image">
               <img src={investment.logo.url}/>
-            </div>
-            <div>
+            </a>
+            <div className="title-bar">
               <p className="title">{investment.title}</p>
-              <p className="content">{investment.description}</p>
+              <div className="web-bar">
+                <p className="pre-web">点击了解更多详情</p>
+                <a href={investment.website} target="_blank" className="website">{investment.website}</a>
+              </div>
             </div>
+            <div className="horizontal-divider" />
+            <p className="content">{investment.description}</p>
           </div>
         </div>
       </div>

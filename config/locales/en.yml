@@ -54,6 +54,7 @@ en:
         logo: "Logo"
         description: "Description"
         investment_category: "Investment Category"
+        website: "Website"
       investment_category:
         name: "Name"
         investment: "Investment"

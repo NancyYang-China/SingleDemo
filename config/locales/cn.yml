@@ -58,6 +58,7 @@ zh-CN:
         logo: "标志"
         description: "详情"
         investment_category: "行业类别"
+        website: "网址"
       investment_category:
         name: "名称"
         investment: "投资组合"

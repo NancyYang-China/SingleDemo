@@ -8,6 +8,7 @@ class Investment < ApplicationRecord
     list do
       field :id
       field :title
+      field :website
       field :investment_category do
         pretty_value do # used in list view columns and show views, defaults to formatted_value for non-association fields
           bindings[:object].investment_category.name
