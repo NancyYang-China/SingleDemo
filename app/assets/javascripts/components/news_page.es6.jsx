@@ -91,7 +91,7 @@ class NewsPage extends React.Component {
   render() {
     return (
       <div className="news">
-        <ImageBanner src="assets/news_badge.jpeg">
+        <ImageBanner src="assets/images/news_badge.jpeg">
           <div className="image-banner">
             <p>News</p>
             <div className="vertical-divider" />

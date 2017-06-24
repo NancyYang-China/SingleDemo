@@ -91,7 +91,7 @@ class InvestmentPage extends React.Component {
   render() {
     return (
       <div className="investment">
-        <ImageBanner tag="Investment Portfolio" src="assets/investment_badge.jpeg" />
+        <ImageBanner tag="Investment Portfolio" src="assets/images/investment_badge.jpeg" />
         {this._renderMenu()}
         {this._renderlist()}
         {this._renderModal()}

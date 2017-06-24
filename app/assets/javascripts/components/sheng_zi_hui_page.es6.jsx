@@ -5,7 +5,7 @@ class ShengZiHuiPage extends React.Component {
 
     return (
       <div className="banner">
-        <img className="full-width" src="assets/szh_badge.jpeg"/>
+        <img className="full-width" src="assets/images/szh_badge.jpeg"/>
         <div className="banner-tag">
           <img className="icon" src={banner.icon.url} />
           <div className="vertical-divider" />

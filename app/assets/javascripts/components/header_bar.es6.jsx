@@ -39,7 +39,7 @@ class HeaderBar extends React.Component {
         <div className='forground'/>
         <div className='menu-content'>
           <a className='nav-logo' href='/'>
-            <img className='nav-logo' src='/assets/logo.png'/>
+            <img className='nav-logo' src='assets/images/logo.png'/>
           </a>
           <div className='menu-bar'>
             {menuItems}

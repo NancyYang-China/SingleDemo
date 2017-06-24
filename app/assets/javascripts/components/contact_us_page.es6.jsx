@@ -13,7 +13,7 @@ class ContactUsPage extends React.Component {
 
     return (
       <div className="contact_us">
-        <img className="full-width" src="assets/contact_us_badge.jpeg"/>
+        <img className="full-width" src="assets/images/contact_us_badge.jpeg"/>
         <div className="items" onMouseOut={e=> {
             this.setState({activeIndex: 0});
           }}>
@@ -42,7 +42,7 @@ class ContactUsPage extends React.Component {
             onMouseOver={e=> {
               this.setState({activeIndex: 3});
             }}>
-            <img style={{width:132, height:132, marginTop: 20}} src="assets/qr_code.jpeg"/>
+            <img style={{width:132, height:132, marginTop: 20}} src="assets/images/qr_code.jpeg"/>
           </ContactItem>
           <ContactItem icon="fa fa-phone-square" active={activeIndex===4}
             name="联系我们"

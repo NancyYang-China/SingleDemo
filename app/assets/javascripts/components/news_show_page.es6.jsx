@@ -23,7 +23,7 @@ class NewsShowPage extends React.Component {
   render() {
     return (
       <div className="news-show">
-        <ImageBanner src="../assets/news_badge.jpeg"/>
+        <ImageBanner src="../assets/images/news_badge.jpeg"/>
         {this._renderContent()}
       </div>
     )
