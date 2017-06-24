@@ -43,6 +43,7 @@ zh-CN:
       investment_category: "投资行业类别"
       news: "新闻动态"
       shengzihui: "盛资汇"
+      recruitment: "职位招聘"
     attributes:
       info:
         title: "标题"
@@ -92,3 +93,9 @@ zh-CN:
         image4: "图片"
         image5: "图片"
         image6: "图片"
+      recruitment:
+        title: "职位"
+        count: "数量"
+        description: "职责说明"
+        requirement: "职位要求"
+        email: "邮件"

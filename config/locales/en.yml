@@ -39,6 +39,7 @@ en:
       investment_category: "Investment Category"
       news: "News"
       shengzihui: "Sheng Zi Hui"
+      recruitment: "Recruitment"
     attributes:
       info:
         title: "Title"
@@ -83,4 +84,10 @@ en:
         image4: "Asset"
         image5: "Asset"
         image6: "Asset"
+      recruitment:
+        title: "Title"
+        count: "Count"
+        description: "Description"
+        requirement: "Requirement"
+        email: "Email"
  
