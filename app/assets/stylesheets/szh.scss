@@ -2,7 +2,7 @@
   background: #f0f0f2;
   min-width: 1200px;
   height: auto;
-  display: inline-block;
+  position: relative;
   .banner {
     position: relative;
     min-width: 1200px;
@@ -20,8 +20,6 @@
       color: #fff;
       font-size: 30px;
       line-height: 44px;
-      display: flex;
-      flex-direction: row;
       .icon {
         width: 103px;
         height: 116px;
@@ -48,14 +46,9 @@
     min-width: 898px;
     position: relative;
     .szh-item {
-      display: flex;
-      flex: 1;
-      flex-direction: column;
       height: auto;
       .top-content {
         margin-top: 42px;
-        display: flex;
-        flex-direction: row;
         div {
           width: 3px;
           height: 17px;
@@ -71,8 +64,6 @@
         }
       }
       .szh-item-content {
-        display: flex;
-        flex-direction: row;
         .main-content {
           margin-left: 30px;
           margin-right: 80px;
@@ -88,9 +79,6 @@
           }
         }
         .assets {
-          display: flex;
-          flex-direction: column;
-          width: 390px;
           height: auto;
           margin-top: 8px;
           .asset {

@@ -1,4 +1,4 @@
-class NewsShowPage extends React.Component {
+class NewsShowPage extends BasePage {
   constructor(props) {
     super(props)
 
@@ -6,6 +6,10 @@ class NewsShowPage extends React.Component {
     this.state = {
       type: 0
     }
+  }
+
+  _path() {
+    return "/news"
   }
 
   _renderContent() {
@@ -24,7 +28,7 @@ class NewsShowPage extends React.Component {
     );
   }
 
-  render() {
+  _render() {
     return (
       <div className="news-show">
         <img className="full-width" src="../assets/images/news_badge.jpeg"/>

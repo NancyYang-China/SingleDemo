@@ -1,4 +1,4 @@
-class NewsPage extends React.Component {
+class NewsPage extends BasePage {
 
   constructor(props) {
     super(props)
@@ -9,6 +9,10 @@ class NewsPage extends React.Component {
     }
 
     this.years = ["all", "2017", "2016", "2015", "old"]
+  }
+
+  _path() {
+    return "/news"
   }
 
   _renderMenuItem(item) {
@@ -97,7 +101,7 @@ class NewsPage extends React.Component {
     );
   }
 
-  render() {
+  _render() {
     return (
       <div className="news">
         <ImageBanner src="assets/images/news_badge.jpeg">

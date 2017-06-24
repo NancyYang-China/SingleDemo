@@ -113,10 +113,12 @@ class AboutUsPage extends React.Component {
   render() {
     return (
       <div className="about_us">
+        <HeaderBar path="/about_us"/>
         <ImageBanner tag="About us" src="assets/images/about_us_badge.jpeg" />
         {this._renderMenu()}
         {this._renderContent()}
         {this._renderModal()}
+        <Footer />
       </div>
     )
   }

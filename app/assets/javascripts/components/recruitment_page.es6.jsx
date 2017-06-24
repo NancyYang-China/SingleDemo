@@ -1,4 +1,4 @@
-class RecruitmentPage extends React.Component {
+class RecruitmentPage extends BasePage {
 
   constructor(props) {
     super(props)
@@ -31,7 +31,7 @@ class RecruitmentPage extends React.Component {
     );
   }
 
-  render() {
+  _render() {
     return (
       <div className="recruitment">
         <div className="full-width">

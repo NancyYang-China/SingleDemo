@@ -1,7 +1,7 @@
-class HomePage extends React.Component {
-  render () {
+class HomePage extends BasePage {
+  _render () {
     return (
-        <SlideBanner banners={this.props.banners}/>
+      <SlideBanner banners={this.props.banners}/>
     )
   }
 }

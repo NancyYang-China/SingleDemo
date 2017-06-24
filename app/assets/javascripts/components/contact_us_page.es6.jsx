@@ -1,4 +1,4 @@
-class ContactUsPage extends React.Component {
+class ContactUsPage extends BasePage {
   constructor(props) {
     super(props)
 
@@ -7,8 +7,11 @@ class ContactUsPage extends React.Component {
     }
   }
 
+  _path() {
+    return "/contact_us"
+  }
 
-  render () {
+  _render () {
     const { activeIndex } = this.state;
 
     return (

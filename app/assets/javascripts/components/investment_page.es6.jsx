@@ -1,4 +1,4 @@
-class InvestmentPage extends React.Component {
+class InvestmentPage extends BasePage {
 
   constructor(props) {
     super(props)
@@ -7,6 +7,10 @@ class InvestmentPage extends React.Component {
       filterType: -1,
       investment: null
     }
+  }
+
+  _path() {
+    return "/investment"
   }
 
   _renderMenuItem(item) {
@@ -93,7 +97,7 @@ class InvestmentPage extends React.Component {
     );
   }
 
-  render() {
+  _render() {
     return (
       <div className="investment">
         <ImageBanner tag="Investment Portfolio" src="assets/images/investment_badge.jpeg" />
