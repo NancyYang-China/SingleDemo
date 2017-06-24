@@ -2,7 +2,8 @@
   background: #f0f0f2;
   min-width: 1200px;
   height: auto;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   .image-banner {
     display: flex;
     flex-direction: row;
@@ -62,6 +63,9 @@
     -webkit-flex-direction: column;
     margin-left: 144px;
     margin-right: 144px;
+    .empty-item {
+      height: 240px;
+    }
     .news-item {
       height: 240px;
       padding-top: 24px;

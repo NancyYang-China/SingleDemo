@@ -81,6 +81,13 @@ class NewsPage extends React.Component {
       );
     })
 
+    var count = newsListView.length < 2 ? (2 - newsListView.length) : 0
+    for(var i = 0; i < count; i++){
+      newsListView.push(
+        <div key={`others-${i}`} className="empty-item" />
+      ) 
+    }
+
     return (
       <div className="news-list">
         {newsListView}
