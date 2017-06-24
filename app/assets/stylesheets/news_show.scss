@@ -4,27 +4,78 @@
   height: auto;
   display: flex;
   flex-direction: column;
+  .full-width {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .space-bar {
+    height:40px;
+    background: #fff;
+  }
   .news-show-content {
-    margin-left: 154px;
-    margin-right: 154px;
-    margin-top: 36px;
-    padding-bottom: 154px;
-    .date {
-      font-size: 16px;
-      color: #5c5c5c;
-      line-height: 23px;
-    }
+    // margin-left: 154px;
+    // margin-right: 154px;
+    margin-top: 20px;
+    width: 1200px;
+    padding-top: 60px;
+    padding-bottom: 240px;
+    margin-bottom: 144px;
+    align-self: center;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 282px;
+    padding-right: 282px;
+    position: relative;
     .title {
-      font-size: 27px;
+      padding: 0px;
+      font-size: 24px;
       color: #101010;
-      line-height: 39px;
-      margin-top: 18px;
-      margin-bottom: 36px;
+      line-height: 35px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Pingfang SC", "Microsoft Yahei", sans-serif;
+    }
+    .date {
+      width: 100%;
+      height: 32px;
+      font-size: 18px;
+      color: #75757F;
+      line-height: 26px;
+      margin-top: 16px;
+      margin-bottom: 42px;
+      text-align: center;
+      padding-top: 3px;
+      border: 1px solid #75757F;
     }
     .content {
-      font-size: 18px;
+      font-size: 16px;
       color: #5C5C5C;
-      line-height: 36px;
+      line-height: 30px;
+    }
+    .back-content {
+      top: 24px;
+      right: 16px;
+      position: absolute;
+      align-self: flex-end;
+      cursor: pointer;
+      p {
+        font-size: 12px;
+        line-height: 30px;
+        align-self: center;
+        color: #101010;
+      }
+      i {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid #75757F;
+        border-radius: 15px;
+        line-height: 28px;
+        margin-left: 20px;
+        color: #000;
+      }
     }
   }
 }

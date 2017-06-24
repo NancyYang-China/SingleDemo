@@ -13,8 +13,12 @@ class NewsShowPage extends React.Component {
 
     return (
       <div className="news-show-content">
-        <p className="date">{news.created_at.slice(0, 10)}</p>
+        <div onClick={()=> {history.back()}}  className="back-content">
+          <p>返回
+          <i className="fa fa-angle-left" /></p>
+        </div>
         <p className="title">{news.title}</p>
+        <p className="date">{news.created_at.slice(0, 10)}</p>
         <div className="content" dangerouslySetInnerHTML={{__html: news.content}}/>
       </div>
     );
@@ -23,7 +27,8 @@ class NewsShowPage extends React.Component {
   render() {
     return (
       <div className="news-show">
-        <ImageBanner src="../assets/images/news_badge.jpeg"/>
+        <img className="full-width" src="../assets/images/news_badge.jpeg"/>
+        <div className="space-bar flex1 flex-h"></div>
         {this._renderContent()}
       </div>
     )
