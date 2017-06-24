@@ -62,22 +62,24 @@ class NewsPage extends React.Component {
       return (news.category === this.state.category) && filterYear
     }).map(news=> {
       return (
-        <div className="news-item">
-          <div className="news-date">
-            <p>{news.created_at.slice(0, 10)}</p>
-            <a href={`/news/${news.id}`}>
-            <i className="fa fa-caret-down" href="/investment"/>
-            </a>
-          </div>
-          <div className="vertical-divider"/>
-          <div className="news-description">
-            <div>
-              <p className="title">{news.title}</p>
-              <p>{news.description}</p>
+        <a href={`/news/${news.id}`}>
+          <div className="news-item">
+            <div className="news-date">
+              <p>{news.created_at.slice(0, 10)}</p>
+              <a href={`/news/${news.id}`}>
+              <i className="fa fa-caret-down" href="/investment"/>
+              </a>
             </div>
-            <div className="horizontal-divider"/>
+            <div className="vertical-divider"/>
+            <div className="news-description">
+              <a href={`/news/${news.id}`}>
+                <p className="title">{news.title}</p>
+                <p>{news.description}</p>
+              </a>
+              <div className="horizontal-divider"/>
+            </div>
           </div>
-        </div>
+        </a>
       );
     })
 
