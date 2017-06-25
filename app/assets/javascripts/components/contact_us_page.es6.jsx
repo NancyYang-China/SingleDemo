@@ -15,9 +15,9 @@ class ContactUsPage extends BasePage {
     const { activeIndex } = this.state;
 
     return (
-      <div className="contact_us">
+      <div className="contact_us flex-v">
         <img className="full-width" src="assets/images/contact_us_badge.jpeg"/>
-        <div className="items" onMouseOut={e=> {
+        <div className="items flex-h flex-hc" onMouseOut={e=> {
             this.setState({activeIndex: 0});
           }}>
           <ContactItem icon="fa fa-envelope" active={activeIndex===1} href=""
@@ -35,7 +35,7 @@ class ContactUsPage extends BasePage {
             }}>
               <p style={{fontSize: 16, fontWeight: "bold" , color: "#a80309", marginTop: 14}}>职位申请请发至</p>
               <p style={{fontSize: 16, color: "#a80309"}}>BP info@sharewin.com</p>
-              <div href="recruitment" className="widget">
+              <div href="recruitment" className="widget flex-v">
                 <span className="icon fa fa-plus" style={{fontSize: 18, fontWeight: "bold"}}></span>
                 <span className="text" style={{fontSize: 15, fontWeight: "bold"}}>点击了解更多职位详情</span>
               </div>

@@ -16,12 +16,12 @@ class ContactItem extends React.Component {
     );
 
     return (
-      <a href={href} className="item" onMouseOver={e=> onMouseOver && onMouseOver(e)}>
-        <div style={{borderColor: color}} className="circle active">
+      <a href={href} className="item flex-v flex-vc" onMouseOver={e=> onMouseOver && onMouseOver(e)}>
+        <div style={{borderColor: color}} className="circle active flex-h flex-hc flex-vc">
           <span style={{color: color}} className={icon}></span>
         </div>
         {nameview}
-        <div style={{visibility: active ? false : "hidden"}} className="detail">
+        <div style={{visibility: active ? false : "hidden"}} className="detail flex-v flex-hc flex-vc">
           <div className="vertical-divider"/>
           <div className="horizontal-divider"/>
           {children}
