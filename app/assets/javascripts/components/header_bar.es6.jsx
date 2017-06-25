@@ -24,9 +24,10 @@ class HeaderBar extends React.Component {
   }
 
   render () {
+    const { path } = this.props
     var menuItems = [];
     this.menus.forEach(menu=> {
-      const color = this.props.path.includes(menu.path) ? "#a80309" : "#000000"
+      const color = path.includes(menu.path) ? "#a80309" : "#000000"
       menuItems.push(
         <a key={menu.path} style={{color}} className='menu-item' href={menu.path}>
           {menu.name}
@@ -34,12 +35,14 @@ class HeaderBar extends React.Component {
       )
     })
 
+    var pp = path === "/news/show" ? '../' : ''
+
     return (
       <div className='top-bar'>
         <div className='forground'/>
         <div className='menu-content'>
           <a className='nav-logo' href='/'>
-            <img className='nav-logo' src='assets/images/logo.png'/>
+            <img className='nav-logo' src={`${pp}assets/images/logo.png`}/>
           </a>
           <div className='menu-bar'>
             {menuItems}

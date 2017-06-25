@@ -8,7 +8,7 @@ class NewsShowPage extends BasePage {
   }
 
   _path() {
-    return "/news"
+    return "/news/show"
   }
 
   _renderContent() {
