@@ -31,10 +31,12 @@
     padding-right: 282px;
     position: relative;
     .title {
+      width: 100%;
       padding: 0px;
       font-size: 24px;
       color: #101010;
       line-height: 35px;
+      text-align: center;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Pingfang SC", "Microsoft Yahei", sans-serif;
     }
     .date {
