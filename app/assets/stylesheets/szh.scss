@@ -12,14 +12,17 @@
       height: 450px;
       object-fit: cover;
     }
-    .banner-tag {
+    #szh-banner-tag {
       position: absolute;
-      left: 30px;
-      bottom: 0px;
+      left: 300px;
+      bottom: 100px;
       z-index: 1;
       color: #fff;
       font-size: 30px;
       line-height: 44px;
+      opacity: 0;
+      animation: szh-banner-tag 2s forwards;
+      animation-delay: 0.8s;
       .icon {
         width: 103px;
         height: 116px;
@@ -36,6 +39,9 @@
       .sub-title {
         margin-top: 20px;
         white-space: pre-wrap;
+      }
+      @keyframes szh-banner-tag {
+        100% { left: 30px; bottom: 0px; opacity: 1 }
       }
     }
   }

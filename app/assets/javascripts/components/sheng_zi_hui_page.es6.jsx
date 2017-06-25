@@ -10,7 +10,7 @@ class ShengZiHuiPage extends BasePage {
     return (
       <div className="banner">
         <img className="full-width" src="assets/images/szh_badge.jpeg"/>
-        <div className="banner-tag flex-h">
+        <div id="szh-banner-tag" className="flex-h">
           <img className="icon" src={banner.icon.url} />
           <div className="vertical-divider flex-asc" />
           <p className="sub-title">{banner.sub_title}</p>
