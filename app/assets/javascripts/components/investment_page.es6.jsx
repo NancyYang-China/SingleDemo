@@ -49,7 +49,7 @@ class InvestmentPage extends BasePage {
         investment.investment_category_id === filterType
     }).map(investment=> {
       return (
-        <div className="item flex-v flex-vc flex-hc" key={investment.id} onClick={()=> this.setState({investment})}>
+        <div className="item flex-h flex-vc flex-hc" key={investment.id} onClick={()=> this.setState({investment})}>
           <img src={investment.logo.url} />
           <p>{investment.title}</p>
         </div>
