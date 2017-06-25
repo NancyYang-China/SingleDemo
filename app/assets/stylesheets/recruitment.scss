@@ -2,8 +2,6 @@
   background: #f0f0f2;
   min-width: 1200px;
   height: auto;
-  display: flex;
-  flex-direction: column;
   .full-width {
     width: 100%;
     height: 180px;
@@ -29,8 +27,6 @@
       text-align: center;
     }
     .recruitment-list {
-      display: flex;
-      flex-direction: column;
       width: 800px;
       background: #fff;
       padding-left: 66px;

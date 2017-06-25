@@ -2,7 +2,6 @@ class NewsShowPage extends BasePage {
   constructor(props) {
     super(props)
 
-    console.log(props.news);
     this.state = {
       type: 0
     }
@@ -17,21 +16,25 @@ class NewsShowPage extends BasePage {
 
     return (
       <div className="news-show-content">
-        <div onClick={()=> {history.back()}}  className="back-content">
+        <a href="javascript:history.back();">
+          <div className="back-content">
           <p>返回
           <i className="fa fa-angle-left" /></p>
-        </div>
+          </div>
+        </a>
         <p className="title">{news.title}</p>
         <p className="date">{news.created_at.slice(0, 10)}</p>
-        <div className="content" dangerouslySetInnerHTML={{__html: news.content}}/>
+        <div className="news-content flex1" dangerouslySetInnerHTML={{__html: news.content}}/>
       </div>
     );
   }
 
   _render() {
     return (
-      <div className="news-show">
-        <img className="full-width" src="../assets/images/news_badge.jpeg"/>
+      <div className="news-show flex-v">
+        <div className="full-width">
+          <img className="image" src="../assets/images/news_badge.jpeg"/>
+        </div>
         <div className="space-bar flex1 flex-h"></div>
         {this._renderContent()}
       </div>

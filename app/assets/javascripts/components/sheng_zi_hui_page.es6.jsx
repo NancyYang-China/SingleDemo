@@ -27,7 +27,6 @@ class ShengZiHuiPage extends BasePage {
       const assetsView = item.assets.length > 0 ? item.assets.map((asset, index)=> {
         return <img key={index} className="asset" src={asset} />
       }) : null
-      console.log(item);
       return (
         <div key={i} className="szh-item flex-v flex1">
           <div className="top-content flex-h">

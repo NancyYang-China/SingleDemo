@@ -2,13 +2,7 @@
   background: #f0f0f2;
   min-width: 1200px;
   height: auto;
-  display: flex;
-  flex-direction: column;
   .image-banner {
-    display: flex;
-    flex-direction: row;
-    display: -webkit-flex;
-    -webkit-flex-direction: row;
     p {
       font-size: 38px;
       line-height: 41px;
@@ -26,12 +20,8 @@
     padding: 20px;
     padding-left: 144px;
     padding-right: 144px;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    display: -webkit-flex;
     -webkit-justify-content: space-between;
-    -webkit-align-items: center;
     background: #fff;
     a:hover {
       color: #a80309;
@@ -57,10 +47,6 @@
     }
   }
   .news-list {
-    display: flex;
-    flex-direction: column;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
     margin-left: 144px;
     margin-right: 144px;
     padding-bottom: 120px;
@@ -70,11 +56,7 @@
     .news-item {
       height: auto;
       padding-top: 24px;
-      display: flex;
-      flex-direction: row;
       justify-content: flex-start;
-      display: -webkit-flex;
-      -webkit-flex-direction: row;
       -webkit-justify-content: flex-start;
       .news-date {
         height: 100px;
@@ -99,12 +81,7 @@
       }
       .news-description {
         margin-left: 36px;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        display: -webkit-flex;
-        -webkit-flex-direction: column;
         -webkit-justify-content: space-between;
         .title {
           margin: 0px;

@@ -12,7 +12,7 @@ class RecruitmentPage extends BasePage {
       var email = recruitment.email || "info@sharewin.com"
       var divider = (recruitments.length - index > 1) ? <div className="horizontal-divider"/> : null
       return (
-        <div className="recruitment-item">
+        <div className="recruitment-item" key={index}>
           <p className="title">{`${recruitment.title}  ${recruitment.count}位`}</p>
           <p className="sub-title">职责说明</p>
           <p className="sub-content">{recruitment.description}</p>
@@ -25,7 +25,7 @@ class RecruitmentPage extends BasePage {
     })
 
     return (
-      <div className="recruitment-list">
+      <div className="recruitment-list flex-v">
         {recruitmentViews}
       </div>
     );
@@ -33,7 +33,7 @@ class RecruitmentPage extends BasePage {
 
   _render() {
     return (
-      <div className="recruitment">
+      <div className="recruitment flex-v">
         <div className="full-width">
           <img className="image" src="assets/images/contact_us_badge.jpeg"/>
         </div>
