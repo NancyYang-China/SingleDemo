@@ -33,9 +33,10 @@ class NewsShowPage extends BasePage {
     return (
       <div className="news-show flex-v">
         <div className="full-width">
-          <img className="image" src="../assets/images/news_badge.jpeg"/>
+          <div className="inner">
+            <img className="image" src="../assets/images/news_badge.jpeg"/>
+          </div>
         </div>
-        <div className="space-bar flex1 flex-h"></div>
         {this._renderContent()}
       </div>
     )

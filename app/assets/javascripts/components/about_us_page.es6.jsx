@@ -31,7 +31,7 @@ class AboutUsPage extends React.Component {
     const partnersView = partners.map(partner=> {
       return (
         <div className="item flex-v flex-vc flex-hc" key={partner.id} onClick={()=> this.setState({partner})}>
-          <img className="icon" src={partner.logo.url} />
+          <img src={partner.logo.url} />
         </div>
       );
     })
