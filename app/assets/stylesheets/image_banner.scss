@@ -10,12 +10,18 @@
   #banner-tag {
     position: absolute;
     height: 55px;
-    left: 144px;
+    left: 0px;
     bottom: 6px;
     z-index: 1;
     color: #ffffff;
     font-size: 38px;
     line-height: 41px;
+    opacity: 0;
+    animation: banner-tag 2s forwards;
+    animation-delay: 0.8s;
+  }
+  @keyframes banner-tag {
+    100% { left: 144px; opacity: 1 }
   }
   #line {
     position: absolute;
@@ -30,7 +36,7 @@
     opacity: 0.7;
     z-index: 1;
     animation: line 2s forwards;
-    animation-delay: .2s;
+    animation-delay: 0.8s;
     animation-iteration-count: 1;
   }
   @keyframes line {
