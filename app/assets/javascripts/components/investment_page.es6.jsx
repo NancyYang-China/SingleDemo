@@ -33,7 +33,7 @@ class InvestmentPage extends BasePage {
     })
     items.splice(0, 0, this._renderMenuItem({key: -1, name: "全部"}))
     return (
-      <div className="investment-menu">
+      <div className="investment-menu flex-h flex-hc flex-vc">
         {items}
       </div>
     )
@@ -49,7 +49,7 @@ class InvestmentPage extends BasePage {
         investment.investment_category_id === filterType
     }).map(investment=> {
       return (
-        <div className="item" key={investment.id} onClick={()=> this.setState({investment})}>
+        <div className="item flex-v flex-vc flex-hc" key={investment.id} onClick={()=> this.setState({investment})}>
           <img src={investment.logo.url} />
           <p>{investment.title}</p>
         </div>
@@ -64,7 +64,7 @@ class InvestmentPage extends BasePage {
     }
 
     return (
-      <div className="list">
+      <div className="list flex-h flex-vw flex-hc">
         {investmentsView}
       </div>
     )
@@ -78,13 +78,13 @@ class InvestmentPage extends BasePage {
            onClick={()=> this.setState({investment: null})}>
         <div className="modal-content">
           <span className="close">&times;</span>
-          <div className="investment-view">
-            <a href={investment.website} target="_blank" className="image">
+          <div className="investment-view flex-v flex-vc">
+            <a href={investment.website} target="_blank">
               <img src={investment.logo.url}/>
             </a>
-            <div className="title-bar">
+            <div className="title-bar flex-h">
               <p className="title">{investment.title}</p>
-              <div className="web-bar">
+              <div className="web-bar flex-h flex-vc">
                 <p className="pre-web">点击了解更多详情</p>
                 <a href={investment.website} target="_blank" className="website">{investment.website}</a>
               </div>
@@ -99,7 +99,7 @@ class InvestmentPage extends BasePage {
 
   _render() {
     return (
-      <div className="investment">
+      <div className="investment flex-v">
         <ImageBanner tag="Investment Portfolio" src="assets/images/investment_badge.jpeg" />
         {this._renderMenu()}
         {this._renderlist()}

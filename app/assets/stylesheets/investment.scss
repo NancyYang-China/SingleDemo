@@ -2,17 +2,10 @@
   background: #f0f0f2;
   min-width: 1200px;
   height: auto;
-  display: inline-block;
   .investment-menu {
     width: 100%;
     height: 130px;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: -webkit-flex;
-    -webkit-justify-content: center;
-    -webkit-align-items: center;
     background: #fff;
     .menu-item {
       margin: 40px;
@@ -27,12 +20,6 @@
   }
   .list {
     margin-top: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    display: -webkit-flex;
-    -webkit-flex-wrap: wrap;
-    -webkit-justify-content: center;
     width: 100%;
     .empty-item {
       min-width: 280px;
@@ -49,12 +36,6 @@
       position: relative;
       background: #fff;
       margin: 5px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      display: -webkit-flex;
-      -webkit-justify-content: center;
-      -webkit-align-items: center;
       cursor: pointer;
       img {
         max-width: 180px;
@@ -94,6 +75,8 @@
       padding: 20px;
       border: 1px solid #888;
       width: 700px;
+      height: auto;
+      position: relative;
   }
   /* The Close Button */
   .close {
@@ -109,31 +92,25 @@
       cursor: pointer;
   }
   .investment-view {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    -webkit-align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 30px;
     padding-bottom: 30px;
-    .image {
-      img {
-        max-width: 240px;
-        max-height: 120px;
-        margin-bottom: 30px;
-        width: auto;
-        height: auto;
-        display: block;
-        object-fit: cover;
-      }
+    img {
+      max-width: 240px;
+      max-height: 120px;
+      margin-bottom: 30px;
+      width: auto;
+      height: auto;
+      display: block;
+      object-fit: cover;
     }
     .title-bar {
-      display: flex;
       width: 100%;
-      flex-direction: row;
+      height: auto;
       align-items: flex-end;
       justify-content: space-between;
       .title {
@@ -143,9 +120,6 @@
         font-family: "Pingfang SC";
       }
       .web-bar {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         .pre-web {
           color: #666666;
           font-size: 11px;
@@ -166,6 +140,8 @@
       background-color: #525e71;
     }
     .content {
+      width: 100%;
+      height: auto;
       color: #5c5c5c;
       font-size: 16px;
       line-height: 36px;
