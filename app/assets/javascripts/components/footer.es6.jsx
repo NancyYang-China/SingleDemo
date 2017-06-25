@@ -1,10 +1,7 @@
 class Footer extends React.Component {
   constructor(props) {
     super(props)
-
-    this.state = {
-    }
-
+    
     this.menus = [{
       title: '关于我们',
       items: [{

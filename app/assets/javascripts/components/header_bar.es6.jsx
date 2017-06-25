@@ -2,9 +2,6 @@ class HeaderBar extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {
-
-    }
     this.menus = [{
       path: '/about_us',
       name: '关于我们'
@@ -25,10 +22,9 @@ class HeaderBar extends React.Component {
 
   render () {
     const { path } = this.props
-    var menuItems = [];
-    this.menus.forEach(menu=> {
-      const color = path.includes(menu.path) ? "#a80309" : "#000000"
-      menuItems.push(
+    const menusView = this.menus.map((menu, index)=> {
+      const color = path.indexOf(menu.path) < 0 ? "#000000" : "#a80309"
+      return (
         <a key={menu.path} style={{color}} className='menu-item' href={menu.path}>
           {menu.name}
         </a>
@@ -45,7 +41,7 @@ class HeaderBar extends React.Component {
             <img className='nav-logo' src={`${pp}assets/images/logo.png`}/>
           </a>
           <div className='menu-bar'>
-            {menuItems}
+            {menusView}
           </div>
         </div>
       </div>
