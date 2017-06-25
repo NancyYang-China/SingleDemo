@@ -30,7 +30,7 @@ class AboutUsPage extends React.Component {
 
     const partnersView = partners.map(partner=> {
       return (
-        <div className="item" key={partner.id} onClick={()=> this.setState({partner})}>
+        <div className="item flex-v flex-vc flex-hc" key={partner.id} onClick={()=> this.setState({partner})}>
           <img className="icon" src={partner.logo.url} />
         </div>
       );
@@ -44,7 +44,7 @@ class AboutUsPage extends React.Component {
     }
   
     return (
-      <div className="list">
+      <div className="list flex-vw flex-hc flex-h">
         {partnersView}
       </div>
     );
@@ -59,8 +59,8 @@ class AboutUsPage extends React.Component {
             <span style={{color: "#888888", fontSize: 33}}>|</span>
             <span style={{color: "#5c5c5c", fontSize: 30, marginLeft: 20}}>{info.title}</span>
           </p>
-          <div className="item-content">
-            <p className="content">{info.description}</p>
+          <div className="item-content flex-h">
+            <p className="content flex1">{info.description}</p>
             <img className="asset" src={info.asset.url}/>
           </div>
         </div>
@@ -78,7 +78,7 @@ class AboutUsPage extends React.Component {
      )
 
     return (
-      <div className="about-us-items">
+      <div className="about-us-items flex-v">
         {items}
       </div>
     )
@@ -112,7 +112,7 @@ class AboutUsPage extends React.Component {
 
   render() {
     return (
-      <div className="about_us">
+      <div className="about_us flex-v">
         <HeaderBar path="/about_us"/>
         <ImageBanner tag="About us" src="assets/images/about_us_badge.jpeg" />
         {this._renderMenu()}

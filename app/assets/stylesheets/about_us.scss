@@ -2,7 +2,6 @@
   background: #f0f0f2;
   min-width: 1200px;
   height: auto;
-  display: inline-block;
   .about-us-menu {
     width: 100%;
     height: 130px;
@@ -20,26 +19,16 @@
   }
   .about-us-items {
     min-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
     .item-card {
       margin-left: 144px;
       margin-right: 112px;
       padding-top: 94px;
       margin-top: -48px;
       .item-content {
-        display: flex;
-        flex-direction: row;
         justify-content: space-between;
-        display: -webkit-flex;
-        -webkit-flex-direction: row;
         -webkit-justify-content: space-between;
         .content {
           color: #5c5c5c;
-          flex: 1;
-          -webkit-flex: 1;
           min-width: 476px;
           height: auto;
           font-size: 20px;
@@ -68,12 +57,6 @@
       margin-right: 112px;
       .list {
         margin-top: 5px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        display: -webkit-flex;
-        -webkit-flex-wrap: wrap;
-        -webkit-justify-content: center;
         width: 100%;
         position: relative;
         .empty-item {
@@ -91,12 +74,6 @@
           position: relative;
           background: #fff;
           margin: 5px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          display: -webkit-flex;
-          -webkit-justify-content: center;
-          -webkit-align-items: center;
           cursor: pointer;
           img {
             max-width: 180px;
