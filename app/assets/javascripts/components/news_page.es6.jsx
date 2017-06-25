@@ -73,7 +73,7 @@ class NewsPage extends BasePage {
             <div className="news-description flex-v flex1">
               <p className="title">{news.title}</p>
               <p>{news.description}</p>
-              <div className="horizontal-divider"/>
+              <div className="horizontal-divider flex-ase"/>
             </div>
           </div>
         </a>

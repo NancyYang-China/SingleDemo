@@ -25,7 +25,6 @@
     padding-top: 60px;
     padding-bottom: 240px;
     margin-bottom: 144px;
-    align-self: center;
     background: #fff;
     padding-left: 282px;
     padding-right: 282px;
@@ -62,12 +61,10 @@
       top: 24px;
       right: 16px;
       position: absolute;
-      align-self: flex-end;
       cursor: pointer;
       p {
         font-size: 12px;
         line-height: 30px;
-        align-self: center;
         color: #101010;
       }
       i {

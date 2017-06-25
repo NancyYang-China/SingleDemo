@@ -30,7 +30,6 @@
         width: 1px;
         height: 116px;
         background: #fff;
-        align-self: center;
         margin-left: 16px;
         margin-right: 16px;
       }
@@ -82,7 +81,7 @@
           height: auto;
           margin-top: 8px;
           .asset {
-            display: block;
+            display: inline-block;
             width: 390px;
             height: 246px;
             margin-bottom: 78px;

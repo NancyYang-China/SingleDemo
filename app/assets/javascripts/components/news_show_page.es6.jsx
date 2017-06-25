@@ -15,11 +15,12 @@ class NewsShowPage extends BasePage {
     const { news } = this.props;
 
     return (
-      <div className="news-show-content">
+      <div className="news-show-content flex-asc">
         <a href="javascript:history.back();">
-          <div className="back-content">
-          <p>返回
-          <i className="fa fa-angle-left" /></p>
+          <div className="back-content flex-ase">
+            <p className="flex-asc">
+              返回<i className="fa fa-angle-left" />
+            </p>
           </div>
         </a>
         <p className="title">{news.title}</p>

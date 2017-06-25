@@ -37,7 +37,7 @@ class RecruitmentPage extends BasePage {
         <div className="full-width">
           <img className="image" src="assets/images/contact_us_badge.jpeg"/>
         </div>
-        <div className="recruitment-content">
+        <div className="recruitment-content flex-asc">
           <p className="recruitment-title">职位招聘</p>
           {this._renderList()}
         </div>

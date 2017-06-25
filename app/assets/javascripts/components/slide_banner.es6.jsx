@@ -2,19 +2,19 @@ class SlideBanner extends React.Component {
 
   _renderBanner(banner, index) {
     const className = index === 0 ? "item active" : "item"
-    const contentClass = `content banner${index}`
+    const contentClass = `content banner${index} flex-v`
     const subTitle = `sub-title-${index === 0 ? 21 : 16}`
 
     const contentView = index === 3 ? (
-      <div className="banner3">
-        <p className="sub-title">{banner.sub_title}</p>
-        <div className="vertical-divider" />
+      <div className="banner3 flex-h">
+        <p className="sub-title flex-ase">{banner.sub_title}</p>
+        <div className="vertical-divider flex-asc" />
         <img className="icon" src={banner.icon.url} />
       </div>
     ) : (
       <div className={contentClass}>
         <p className="title">{banner.title}</p>
-        <div className="horizontal-divider" />
+        <div className="horizontal-divider flex-asc" />
         <p className={subTitle}>{banner.sub_title}</p>
       </div>
     )
