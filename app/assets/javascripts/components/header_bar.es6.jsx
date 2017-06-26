@@ -37,7 +37,7 @@ class HeaderBar extends React.Component {
       <div className='top-bar'>
         <div className='forground'/>
         <div className='menu-content'>
-          <a className='nav-logo' href='/'>
+          <a className='nav-logo' href='/' target="_self">
             <img className='nav-logo' src={`${pp}assets/images/logo.png`}/>
           </a>
           <div className='menu-bar'>
