@@ -15,15 +15,41 @@
   .recruitment-content {
     width: 800px;
     height: auto;
-    .recruitment-title {
+    .recruitment-top-bar {
+      width: 800px;
+      height: 90px;
+      position: relative;
       margin-top: 10px;
       margin-bottom: 10px;
-      width: 800px;
       background: #bbbbbb;
-      color: #757575;
-      font-size: 30px;
-      line-height: 90px;
-      text-align: center;
+      .recruitment-title {
+         color: #757575;
+        font-size: 30px;
+        line-height: 90px;
+        text-align: center;
+      }
+      .back-content {
+        top: 8px;
+        right: 8px;
+        position: absolute;
+        cursor: pointer;
+        p {
+          font-size: 12px;
+          line-height: 30px;
+          color: #101010;
+        }
+        i {
+          width: 30px;
+          height: 30px;
+          font-size: 20px;
+          text-align: center;
+          border: 1px solid #75757F;
+          border-radius: 15px;
+          line-height: 28px;
+          margin-left: 20px;
+          color: #000;
+        }
+      }
     }
     .recruitment-list {
       width: 800px;
