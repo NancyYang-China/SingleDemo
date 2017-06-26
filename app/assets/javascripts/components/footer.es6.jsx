@@ -97,7 +97,7 @@ class Footer extends React.Component {
     return (
       <div className='footer'>
         {menusView}
-        <p className="copyright">版权声明  Copyright@ 盛宇基金2017</p>
+        <p className="copyright">{`版权声明  Copyright@ 盛宇基金${new Date().getFullYear()}`}</p>
       </div>
     )
   }
