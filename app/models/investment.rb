@@ -5,6 +5,16 @@ class Investment < ApplicationRecord
   belongs_to :investment_category
 
   rails_admin do
+    edit do
+      field :title
+      field :logo
+      field :description, :text do
+        html_attributes maxlength: 70, rows: 2, cols: 40
+     end
+      field :investment_category
+      field :website
+    end
+
     list do
       field :id
       field :title
