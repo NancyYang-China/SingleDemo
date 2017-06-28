@@ -44,6 +44,22 @@
           height: 42px;
           background-color: #a80309;
         }
+        p {
+          width: 100%;
+          text-align: center;
+          font-size: 16px;
+          color: #a80309;
+        }
+        .bold-title {
+          font-weight: bold;
+          margin-top: 14px;
+        }
+        .company-info {
+          font-size: 13px;
+          color: #000;
+          text-align: center;
+          line-height: 26px;
+        }
         .widget {
           width: 160px;
           height: 48px;
@@ -51,6 +67,18 @@
           cursor: pointer;
           text-align: center;
           justify-content: space-between;
+          span {
+            font-size: 18px;
+            font-weight: bold;
+          }
+          .text {
+            font-size: 15px;
+          }
+        }
+        .qr-code {
+          width: 132px;
+          height: 132px;
+          margin-top: 20px;
         }
       }
     }

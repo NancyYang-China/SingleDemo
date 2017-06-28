@@ -11,6 +11,6 @@ Rails.application.routes.draw do
   get :about_us, to: 'home#about_us', as: :about_us
   get :investment, to: 'home#investment', as: :investment
   get :shengzihui, to: 'home#shengzihui', as: :shengzihui
-  get :contact_us, to: 'home#contact_us', as: :contact_us
+  get :contact_us, to: 'contact_us#index', as: :contact_us
   get :recruitment, to: 'recruitment#index', as: :recruitment
 end
