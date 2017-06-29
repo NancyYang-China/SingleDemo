@@ -1,22 +1,25 @@
 class Investment < ApplicationRecord
-  default_scope { order('id ASC') }
+  default_scope { order('position ASC') }
   mount_uploader :logo, LogoUploader
 
   belongs_to :investment_category
 
   rails_admin do
+    nestable_list true
+
     edit do
       field :title
       field :logo
       field :description, :text do
         html_attributes maxlength: 70, rows: 2, cols: 40
-     end
+      end
       field :investment_category
       field :website
     end
 
     list do
       field :id
+      field :position
       field :title
       field :website
       field :investment_category do

@@ -34,6 +34,9 @@ RailsAdmin.config do |config|
     delete
     show_in_app
 
+    # Add the nestable action for configured models
+    nestable
+
     ## With an audit adapter, you can add:
     # history_index
     # history_show

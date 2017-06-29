@@ -61,6 +61,7 @@ gem 'font-awesome-sass'
 # CKEditor is a WYSIWYG text editor designed to simplify web content creation
 gem 'ckeditor'
 gem 'listen', '~> 3.0.5'
+gem 'rails_admin_nestable', '~> 0.3.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

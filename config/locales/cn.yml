@@ -35,6 +35,14 @@ zh-CN:
     actions:
       dashboard:
         title: "Site Administration"
+      nestable:
+        menu: "排序"
+        breadcrumb: "排序"
+        title: "投资组合排序"
+        live_update: "实时更新"
+        update: "更新"
+        success: "成功"
+        failure: "失败"
 
   activerecord:
     models:
@@ -61,6 +69,7 @@ zh-CN:
         description: "详情"
         investment_category: "行业类别"
         website: "网址"
+        position: "位置"
       investment_category:
         name: "名称"
         investment: "投资组合"
