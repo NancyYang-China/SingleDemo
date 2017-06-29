@@ -18,7 +18,7 @@ class Investment < ApplicationRecord
     end
 
     list do
-      field :id
+      sort_by :position
       field :position
       field :title
       field :website

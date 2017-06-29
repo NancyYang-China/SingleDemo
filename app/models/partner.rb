@@ -13,9 +13,9 @@ class Partner < ApplicationRecord
     end
   
     list do
-      field :id
-      field :name
+      sort_by :position
       field :position
+      field :name
       field :website do
         pretty_value do
           if value.include?"http"
