@@ -57,7 +57,7 @@ class AboutUsPage extends React.Component {
         <div id={info.id} key={info.id} className="item-card">
           <p>
             <span style={{color: "#888888", fontSize: 33}}>|</span>
-            <span style={{color: "#5c5c5c", fontSize: 30, marginLeft: 20}}>{info.title}</span>
+            <span className="item-title">{info.title}</span>
           </p>
           <div className="item-content flex-h">
             <p className="content flex1">{info.description}</p>
