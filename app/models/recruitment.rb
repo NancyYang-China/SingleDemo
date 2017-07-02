@@ -1,9 +1,20 @@
 class Recruitment < ApplicationRecord
-  
+  default_scope { order('position ASC') }
+ 
   
   rails_admin do
+    nestable_list true
+
+    edit do
+      field :title
+      field :description
+      field :requirement
+      field :email
+      field :count 
+    end
+
     list do
-      field :id
+      field :position
       field :title
       field :count
       field :description
