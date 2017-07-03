@@ -21,9 +21,9 @@
       position: relative;
       margin-top: 10px;
       margin-bottom: 10px;
-      background: #bbbbbb;
+      background: #a80309;
       .recruitment-title {
-         color: #757575;
+         color: #fff;
         font-size: 30px;
         line-height: 90px;
         text-align: center;
@@ -36,18 +36,18 @@
         p {
           font-size: 12px;
           line-height: 30px;
-          color: #101010;
+          color: #fff;
         }
         i {
           width: 30px;
           height: 30px;
           font-size: 20px;
           text-align: center;
-          border: 1px solid #75757F;
+          border: 1px solid #fff;
           border-radius: 15px;
           line-height: 28px;
           margin-left: 20px;
-          color: #000;
+          color: #fff;
         }
       }
     }
@@ -86,6 +86,9 @@
           line-height: 25px;
           font-weight: bold;
           white-space: pre-wrap;
+          .email-address {
+            color: #a80309; 
+          }
         }
         .horizontal-divider {
           width: 100%;

@@ -24,9 +24,6 @@ class Footer extends React.Component {
       title: '投资组合',
       items: [{
         path: '/investment',
-        name: '投资组合'
-      }, {
-        path: '/investment',
         name: 'TMT'
       }, {
         path: '/investment',
