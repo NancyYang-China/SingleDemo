@@ -13,7 +13,7 @@ class ContactUsPage extends BasePage {
       children: (
         <div>
           <p className="bold-title">BP 请发至</p>
-          <p>BP info@sharewin.com</p>
+          <p>BP info@sharewin-sh.com</p>
         </div>
       ) 
     }, {
@@ -23,8 +23,8 @@ class ContactUsPage extends BasePage {
       children: (
         <div>
           <p className="bold-title">职位申请请发至</p>
-          <p>BP info@sharewin.com</p>
-          <div href="recruitment" className="widget flex-v">
+          <p>zhaopin@sharewin-sh.com</p>
+          <div href="recruitment" className="widget flex-v flex-vc flex-asc">
             <span className="icon fa fa-plus"></span>
             <span className="text">点击了解更多职位详情</span>
           </div>
