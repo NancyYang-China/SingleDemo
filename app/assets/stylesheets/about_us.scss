@@ -1,6 +1,6 @@
 .about_us {
   background: #f0f0f2;
-  min-width: 1200px;
+  min-width: 1480px;
   height: auto;
   .about-us-menu {
     width: 100%;
@@ -19,7 +19,7 @@
     }
   }
   .about-us-items {
-    min-width: 1200px;
+    width: 1480px;
     .item-card {
       margin-left: 144px;
       margin-right: 112px;
@@ -68,17 +68,21 @@
         width: 100%;
         position: relative;
         .empty-item {
-          min-width: 224px;
-          min-height: 124px;
-          width: calc(25% - 10px);
-          height: 11.07vw;
+          // min-width: 304px;
+          // min-height: 152px;
+          // width: calc(33.33% - 10px);
+          // height: 16.66vw;
+          width: 398px;
+          height: 199px;
           margin: 5px;
         }
         .item {
-          min-width: 224px;;
-          min-height: 124px;
-          width: calc(25% - 10px);
-          height: 11.07vw;
+          // min-width: 304px;;
+          // min-height: 152px;
+          // width: calc(33.33% - 10px);
+          // height: 16.66vw;
+          width: 398px;
+          height: 199px;
           position: relative;
           background: #fff;
           margin: 5px;

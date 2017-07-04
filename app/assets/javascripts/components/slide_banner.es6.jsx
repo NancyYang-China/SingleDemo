@@ -33,7 +33,7 @@ class SlideBanner extends React.Component {
 
     return (
       <div id="myCarousel" className="carousel slide"
-           data-ride="carousel" data-interval={6000} data-pause={false}>
+           data-ride="carousel" data-interval={8000} data-pause={false}>
         <ol className="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" className="active" />
           <li data-target="#myCarousel" data-slide-to="1" />

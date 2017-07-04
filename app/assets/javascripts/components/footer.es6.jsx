@@ -18,7 +18,7 @@ class Footer extends React.Component {
         name: '投资策略'
       }, {
         path: '/about_us#0',
-        name: '合作伙伴'
+        name: '产业伙伴'
       }]
     }, {
       title: '投资组合',

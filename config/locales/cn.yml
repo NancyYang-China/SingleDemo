@@ -47,7 +47,7 @@ zh-CN:
   activerecord:
     models:
       info: "关于盛宇"
-      partner: "合作伙伴"
+      partner: "产业伙伴"
       investment: "投资组合"
       investment_category: "投资行业类别"
       news: "新闻动态"

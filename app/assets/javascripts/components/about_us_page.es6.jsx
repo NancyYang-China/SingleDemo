@@ -16,7 +16,7 @@ class AboutUsPage extends React.Component {
       );
     });
 
-    items.push(<a className="menu-item" key={0} href="#0">合作伙伴</a>)
+    items.push(<a className="menu-item" key={0} href="#0">产业伙伴</a>)
     return (
       <div className="about-us-menu flex-h flex-hc flex-vc">
         {items}
@@ -36,7 +36,7 @@ class AboutUsPage extends React.Component {
       );
     })
 
-    var count = (4 - partners.length%4)%4
+    var count = (3 - partners.length%3)%3
     for(var i = 0; i < count; i++){
       partnersView.push(
         <div key={`others-${i}`} className="empty-item" />
@@ -71,14 +71,14 @@ class AboutUsPage extends React.Component {
       <div id={0} key={0} className="partner-item">
         <p className="title">
           <span style={{color: "#888888", fontSize: 33}}>|</span>
-          <span style={{color: "#5c5c5c", fontSize: 30, marginLeft: 20}}>合作伙伴</span>
+          <span style={{color: "#5c5c5c", fontSize: 30, marginLeft: 20}}>产业伙伴</span>
         </p>
         {this._renderPanterList()}
       </div>
      )
 
     return (
-      <div className="about-us-items flex-v">
+      <div className="about-us-items flex-v flex-asc">
         {items}
       </div>
     )

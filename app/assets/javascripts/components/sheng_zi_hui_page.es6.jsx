@@ -38,7 +38,7 @@ class ShengZiHuiPage extends BasePage {
               <p className="title">{item.title}</p>
               <p className="content">{item.content}</p>
             </div>
-            <div className="assets flex-v">
+            <div className="assets flex-v" style={{marginLeft: assetsView ? 80 : 0}}>
               {assetsView}
             </div>
           </div>
