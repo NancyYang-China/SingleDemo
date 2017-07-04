@@ -1,40 +1,29 @@
 class Footer extends React.Component {
   constructor(props) {
     super(props)
-    
+
+    var aboutUsItems = this.props.infos.map(info=> {
+      return {
+        path: `/about_us#${info.id}`,
+        name: info.name
+      }
+    })
+    aboutUsItems.push({ path: '/about_us#0', name: '产业伙伴' })
+    console.log(aboutUsItems);
+
+    var investmentsItems = this.props.inCas.map(inca=> {
+      return {
+        path: `/investment?c=${inca.id}`,
+        name: inca.name
+      }
+    })
+
     this.menus = [{
       title: '关于我们',
-      items: [{
-        path: '/about_us#2',
-        name: '盛宇简介'
-      }, {
-        path: '/about_us#3',
-        name: '价值观与愿景'
-      }, {
-        path: '/about_us#4',
-        name: '投资团队'
-      }, {
-        path: '/about_us#5',
-        name: '投资策略'
-      }, {
-        path: '/about_us#0',
-        name: '产业伙伴'
-      }]
+      items: aboutUsItems
     }, {
       title: '投资组合',
-      items: [{
-        path: '/investment',
-        name: 'TMT'
-      }, {
-        path: '/investment',
-        name: '医疗健康'
-      }, {
-        path: '/investment',
-        name: '新产业'
-      }, {
-        path: '/investment',
-        name: '其他行业'
-      }]
+      items: investmentsItems
     }, {
       title: '公司动态',
       items: [{

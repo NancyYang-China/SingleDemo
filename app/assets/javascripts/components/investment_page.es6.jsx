@@ -4,7 +4,7 @@ class InvestmentPage extends BasePage {
     super(props)
 
     this.state = {
-      filterType: -1,
+      filterType: this.props.cate || -1,
       investment: null
     }
   }
@@ -14,7 +14,7 @@ class InvestmentPage extends BasePage {
   }
 
   _renderMenuItem(item) {
-    const color = item.key === this.state.filterType ? "#a80309" : "#000000"
+    const color = item.key == this.state.filterType ? "#a80309" : "#000000"
 
     return (
       <a className="menu-item" key={item.key} style={{color}}
@@ -46,7 +46,7 @@ class InvestmentPage extends BasePage {
 
     const investmentsView = investments.filter(investment=> {
       return (filterType === -1) ? true : 
-        investment.investment_category_id === filterType
+        investment.investment_category_id == filterType
     }).map(investment=> {
       return (
         <div className="item flex-h flex-vc flex-hc" key={investment.id} onClick={()=> this.setState({investment})}>

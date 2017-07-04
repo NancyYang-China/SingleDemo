@@ -118,7 +118,6 @@ class AboutUsPage extends React.Component {
         {this._renderMenu()}
         {this._renderContent()}
         {this._renderModal()}
-        <Footer />
       </div>
     )
   }

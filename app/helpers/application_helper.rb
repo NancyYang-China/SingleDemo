@@ -13,4 +13,16 @@ module ApplicationHelper
 
     nil
   end
+
+  def infos
+    Info.all.map do |info|
+      { id: info.id, name: info.title }
+    end
+  end
+
+  def investmentCategories
+    InvestmentCategory.all.map do |ic|
+      { id: ic.id, name: ic.name }
+    end
+  end
 end
