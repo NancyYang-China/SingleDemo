@@ -31,7 +31,7 @@ class InvestmentPage extends BasePage {
     const items = investment_categories.map(category=> {
       return this._renderMenuItem({key: category.id, name: category.name})
     })
-    items.splice(0, 0, this._renderMenuItem({key: -1, name: "全部"}))
+    // items.splice(0, 0, this._renderMenuItem({key: -1, name: "全部"}))
     return (
       <div className="investment-menu flex-h flex-hc flex-vc">
         {items}

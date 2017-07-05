@@ -74,6 +74,7 @@ zh-CN:
       investment_category:
         name: "名称"
         investment: "投资组合"
+        position: "位置"
       news:
         title: "标题"
         description: "详情"
