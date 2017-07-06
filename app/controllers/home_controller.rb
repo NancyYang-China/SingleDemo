@@ -10,7 +10,7 @@ class HomeController < ApplicationController
   end
 
   def investment
-    render component: 'InvestmentPage', props: { investments: Investment.all, investment_categories: InvestmentCategory.all, cate: params[:c] }
+    render component: 'InvestmentPage', props: { investments: Investment.all, investment_categories: InvestmentCategory.all, cate: params[:c] || InvestmentCategory.first.id }
   end
 
   def shengzihui
