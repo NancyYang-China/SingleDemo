@@ -30,7 +30,7 @@
       height: 10.7vw;
       margin: 5px;
     }
-    #investment-item {
+    .item {
       min-width: 280px;
       min-height: 150px;
       width: 20%;
@@ -54,6 +54,106 @@
         bottom: 0px;
         text-align: center;
         color: #757575;
+      }
+    }
+    #investment-item {
+      -webkit-animation: investment-item 1.8s ease-in;
+      -moz-animation: investment-item 1.8s ease-in;
+      animation: investment-item 1.8s ease-in;
+    }
+    @-moz-keyframes investment-item {
+      0% {
+        -moz-transform: rotateX(90deg);
+        opacity: 0;
+      }
+      50% {
+        -moz-transform: rotateY(45deg);
+        opacity: 0.8;
+      }
+      100% {
+        -moz-transform: rotateX(0deg);
+        -moz-transform: rotateY(0deg);
+        opacity: 1;
+      }
+    }
+    @-webkit-keyframes investment-item {
+      0% {
+        -webkit-transform: rotateX(90deg);
+        opacity: 0;
+      }
+      50% {
+        -webkit-transform: rotateY(45deg);
+        opacity: 0.8;
+      }
+      100% {
+        -webkit-transform: rotateX(0deg);
+        -webkit-transform: rotateY(0deg);
+        opacity: 1;
+      } 
+    }
+    @keyframes investment-item {
+      0% {
+        transform: rotateX(90deg);
+        opacity: 0;
+      }
+      50% {
+        transform: rotateY(45deg);
+        opacity: 0.8;
+      }
+      100% {
+        transform: rotateX(180deg);
+        transform: rotateY(0deg);
+        opacity: 1;
+      }
+    }
+    #investment-item-2 {
+      -webkit-animation: investment-item-2 1.8s ease-in;
+      -moz-animation: investment-item-2 1.8s ease-in;
+      animation: investment-item-2 1.8s ease-in;
+    }
+    @-moz-keyframes investment-item-2 {
+      0% {
+        -moz-transform: rotateX(270deg);
+        opacity: 0;
+      }
+      50% {
+        -moz-transform: rotateY(45deg);
+        opacity: 0.8;
+      }
+      100% {
+        -moz-transform: rotateX(0deg);
+        -moz-transform: rotateY(0deg);
+        opacity: 1;
+      }
+    }
+    @-webkit-keyframes investment-item-2 {
+      0% {
+        -webkit-transform: rotateX(270deg);
+        opacity: 0;
+      }
+      50% {
+        -webkit-transform: rotateY(45deg);
+        opacity: 0.8;
+      }
+      100% {
+        -webkit-transform: rotateX(0deg);
+        -webkit-transform: rotateY(0deg);
+        opacity: 1;
+      } 
+    }
+    @keyframes investment-item-2 {
+      0% {
+        transform: rotateX(270deg);
+        opacity: 0;
+      }
+      50% {
+        transform: rotateY(45deg);
+        opacity: 0.8;
+      }
+      100% {
+        transform: rotateX(0deg);
+        transform: rotateY(0deg);
+        opacity: 1;
       }
     }
   }

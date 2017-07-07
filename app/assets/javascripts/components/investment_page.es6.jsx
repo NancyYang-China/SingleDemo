@@ -47,9 +47,10 @@ class InvestmentPage extends BasePage {
     const investmentsView = investments.filter(investment=> {
       return (filterType === -1) ? true : 
         investment.investment_category_id == filterType
-    }).map(investment=> {
+    }).map((investment, index)=> {
+      const id = index % 3 === 0 ? "investment-item-2" : "investment-item" 
       return (
-        <div id="investment-item" className="flex-h flex-vc flex-hc" key={investment.id} onClick={()=> this.setState({investment})}>
+        <div id={id} className="item flex-h flex-vc flex-hc" key={investment.id} onClick={()=> this.setState({investment})}>
           <img src={investment.logo.url} />
           <p>{investment.title}</p>
         </div>
