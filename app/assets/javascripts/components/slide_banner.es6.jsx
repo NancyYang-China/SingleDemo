@@ -6,7 +6,7 @@ class SlideBanner extends React.Component {
     const subTitle = `sub-title-${index === 0 ? 21 : 16}`
 
     const contentView = index === 3 ? (
-      <div className="banner3 flex-h">
+      <div className="flex-h banner3">
         <p className="sub-title flex-ase">{banner.sub_title}</p>
         <div className="vertical-divider flex-asc" />
         <img className="icon" src={banner.icon.url} />

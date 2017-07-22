@@ -1,3 +1,5 @@
+@import 'mixins';
+
 #myCarousel {
   .full-width {
     width: 100%;
@@ -33,4 +35,19 @@
     margin-right: 6px;
     background-color: #444444;
   }
+}
+
+@include respond-to(mobile) {
+  #myCarousel {
+   .full-width {
+      min-width: nil;
+      min-height: nil;
+    }
+    .carousel-indicators li {
+      width: 36px;
+    }
+    .carousel-indicators .active {
+      width: 36px;
+    }
+  } 
 }

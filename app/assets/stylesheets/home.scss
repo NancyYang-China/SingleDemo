@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .carousel-inner {
   width: 100%;
   min-width: 1200px;
@@ -75,4 +77,80 @@
       }
     }
   }
+}
+
+@include respond-to(mobile) {
+  .carousel-inner {
+    min-width: 0px;
+    min-height: 0px;
+    div {
+      .content {
+        .title {
+          line-height: 54px;
+          font-size: 37px;
+          margin: 0px;
+        }
+        .horizontal-divider {
+          width: 156px;
+        }
+        .sub-title-21 {
+          font-size: 17px;
+          line-height: 24px;
+          margin-top: 12px;
+        }
+        .sub-title-16 {
+          font-size: 11px;
+          line-height: 21px;
+          margin-top: 12px;
+        }
+      }
+      .banner0 {
+        left: 0px;
+        right: 0px; 
+        top: 30%;
+      }
+      .banner1 {
+        left: 0px;
+        right: 0px; 
+        top: 30%;
+       }
+      .banner2 {
+        left: 0px;
+        right: 0px; 
+        top: 30%;
+       }
+      .banner3 {
+        top: 20%;
+        left: 0px;
+        right: 0px;
+        flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+        -moz-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        align-items: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        .sub-title {
+          width: 100%;
+          color: #C42243;
+          font-size: 16px;
+          line-height: 23px;
+          margin-bottom: 0px;
+        }
+        .vertical-divider {
+          width: 156px;
+          height: 1px;
+          background: #fff;
+          margin-top: 6px;
+          margin-bottom: 12px;
+        }
+        .icon {
+          width: 80px;
+          height: 90px;
+          object-fit: contain;
+        }
+      }
+    }
+  } 
 }
