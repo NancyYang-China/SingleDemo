@@ -24,9 +24,15 @@ class ShengZiHuiPage extends BasePage {
     const { news } = this.props;
 
     const newsListView = news.map((item, i)=> {
-      const assetsView = item.assets.length > 0 ? item.assets.map((asset, index)=> {
-        return <img key={index} className="asset" src={asset} />
-      }) : null
+     const assetsView = item.assets.length > 0 ? (
+        <div className="assets flex-v">
+          {
+            item.assets.map((asset, index)=> {
+              return <img key={index} className="asset" src={asset} />
+            })
+          }
+        </div>
+      ) : null;
       return (
         <div key={i} className="szh-item flex-v flex1">
           <div className="top-content flex-h">
@@ -38,9 +44,7 @@ class ShengZiHuiPage extends BasePage {
               <p className="title">{item.title}</p>
               <p className="content">{item.content}</p>
             </div>
-            <div className="assets flex-v" style={{marginLeft: assetsView ? 80 : 0}}>
-              {assetsView}
-            </div>
+            {assetsView}
           </div>
           <div className="horizontal-divider" />
         </div>
