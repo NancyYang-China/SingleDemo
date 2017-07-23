@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .banner {
   position: relative;
   min-width: 1200px;
@@ -42,4 +44,25 @@
   @keyframes line {
     100% { width: 100% }
   }
+}
+
+@include respond-to(mobile) {
+  .banner {
+    min-width: 0px;
+    .full-width {
+      height: 200px;
+    }
+    #banner-tag {
+      position: absolute;
+      height: 40px;
+      font-size: 24px;
+      line-height: 33px;
+    }
+    @keyframes banner-tag {
+      100% { left: 16%; opacity: 1 }
+    }
+    #line {
+      height: 3px;
+    }
+  } 
 }

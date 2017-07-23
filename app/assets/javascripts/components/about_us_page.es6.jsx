@@ -56,10 +56,10 @@ class AboutUsPage extends React.Component {
       return (
         <div id={info.id} key={info.id} className="item-card">
           <p>
-            <span style={{color: "#888888", fontSize: 33}}>|</span>
+            <span className="item-s">|</span>
             <span className="item-title">{info.title}</span>
           </p>
-          <div className="item-content flex-h">
+          <div className="flex-h item-content">
             <p className="content flex1">{info.description}</p>
             <img className="asset" src={info.asset.url}/>
           </div>
@@ -70,8 +70,8 @@ class AboutUsPage extends React.Component {
     items.push(
       <div id={0} key={0} className="partner-item">
         <p className="title">
-          <span style={{color: "#888888", fontSize: 33}}>|</span>
-          <span style={{color: "#5c5c5c", fontSize: 30, marginLeft: 20}}>产业伙伴</span>
+          <span className="item-s">|</span>
+          <span className="item-title">产业伙伴</span>
         </p>
         {this._renderPanterList()}
       </div>

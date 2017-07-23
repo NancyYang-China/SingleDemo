@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .top-bar {
   height: 60px;
   width: 100%;
@@ -57,4 +59,24 @@
     margin: 16px;
     text-decoration: none;
   }
+}
+
+@include respond-to(mobile) {
+  .top-bar {
+    min-width: 0px;
+    height: 45px;
+    .forground {
+      height: 43px;
+    }
+    .menu-content {
+      height: 43px;
+    }
+    .nav-logo {
+      width: 35px;
+      margin-left: 12px;
+    }
+    .menu-bar {
+      // display: none;
+    }
+  } 
 }
