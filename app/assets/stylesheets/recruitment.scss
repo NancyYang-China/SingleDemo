@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .recruitment {
   background: #f0f0f2;
   min-width: 1200px;
@@ -96,6 +98,58 @@
           background: #525e71;
           margin-top: 80px;
           margin-bottom: 80px;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(mobile) {
+  .recruitment {
+    min-width: 0px;
+    .full-width {
+      display: none;
+    }
+    .recruitment-content {
+      width: 100%;
+      .recruitment-top-bar {
+        width: 100%;
+        height: 42px;
+        margin-top: 48px;
+        margin-bottom: 0px;
+        .recruitment-title {
+          font-size: 24px;
+          line-height: 42px;
+        }
+        .back-content {
+          top: 0px;
+          i {
+            width: 24px;
+            height: 24px;
+            font-size: 20px;
+            border-radius: 12px;
+            line-height: 22px;
+            margin-left: 12px;
+            margin-top: 6px;
+          }
+        }
+      }
+      .recruitment-list {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 24px;
+        .recruitment-item {
+          .sub-title {
+            margin-top: 24px;
+            margin-bottom: 16px;
+          }
+          .email {
+            margin-top: 24px;
+          }
+          .horizontal-divider {
+            margin-top: 24px;
+            margin-bottom: 24px;
+          }
         }
       }
     }
