@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .news {
   background: #f0f0f2;
   min-width: 1200px;
@@ -109,6 +111,89 @@
           justify-content: flex-end;
           -webkit-align-content: flex-end;
           -webkit-justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(mobile) {
+  .news {
+    min-width: 0px;
+    .image-banner {
+      p {
+        font-size: 24px;
+        line-height: 33px;
+      }
+      .vertical-divider {
+        width: 1px;
+        height: 24px;
+        background-color: #fff;
+        margin: 6px 12px 6px 12px;
+      }
+    }
+    .news-menu {
+      height: 80px;
+      padding: 0px;
+      flex-direction: column;
+      justify-content: space-around;
+      -webkit-justify-content: space-around;
+      a:hover {
+        color: #a80309;
+      }
+      .menu-item {
+        font-size: 13px;
+        line-height: 19px;
+      }
+      .year-item {
+        font-size: 14px;
+        line-height: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      .vertical-divider {
+        height: 16px;
+      }
+    }
+    .news-list {
+      margin-left: 18px;
+      margin-right: 18px;
+      padding-bottom: 120px;
+      .empty-item {
+        height: 196px;
+      }
+      a {
+        color: #757575;
+      }
+      .news-item {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        .news-date {
+          height: 30px;
+          p {
+            text-align: start;
+            align-self: flex-start;
+            font-size: 12px;
+            line-height: 17px;
+          }
+          i {
+            display: none;
+          }
+        }
+        .vertical-divider {
+          display: none;
+        }
+        .news-description {
+          margin-left: 0px;
+          .title {
+            margin: 0px;
+            font-size: 14px;
+            line-height: 20px;
+          }
+          p {
+            font-size: 12px;
+            line-height: 24px;
+          }
         }
       }
     }
