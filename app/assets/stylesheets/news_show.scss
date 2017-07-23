@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .news-show {
   background: #f0f0f2;
   min-width: 1200px;
@@ -77,6 +79,45 @@
         line-height: 28px;
         margin-left: 20px;
         color: #000;
+      }
+    }
+  }
+}
+
+@include respond-to(mobile) {
+  .news-show {
+    min-width: 0px;
+    .full-width {
+      display: none;
+    }
+    .news-show-content {
+      width: 100%;
+      margin: 48px 0px 0px 0px;
+      padding: 60px 12px 40px 12px;
+      .title {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .date {
+        height: auto;
+        font-size: 12px;
+        line-height: 17px;
+        margin-top: 6px;
+        margin-bottom: 12px;
+        border: none;
+        text-align: start;
+      }
+      .news-content {
+        font-size: 12px;
+        line-height: 24px;
+      }
+      .back-content {
+        i {
+          width: 24px;
+          height: 24px;
+          font-size: 18px;
+          line-height: 22px;
+        }
       }
     }
   }
