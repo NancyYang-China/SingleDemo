@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .contact_us {
   background: #f0f0f2;
   min-width: 1200px;
@@ -78,6 +80,76 @@
           width: 132px;
           height: 132px;
           margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(mobile) {
+  .contact_us {
+    min-width: 100%;
+    height: 600px;
+    position: relative;
+    .full-width {
+      width: 100%;
+      height: 100%;
+    }
+    .items {
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      min-width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+      top: 30%;
+      .item {
+        width: 20%;
+        padding: 0px;
+        .circle {
+          width: 50px;
+          height: 50px;
+          border-radius: 50px;
+          .fa {
+            font-size: 22px;
+          }
+        }
+        .detail {
+          .horizontal-divider {
+            width: 65px;
+          }
+          .vertical-divider {
+            height: 40px;
+          }
+          p {
+            font-size: 13px;
+            line-height: 19px;
+          }
+          .bold-title {
+            font-size: 13px;
+            line-height: 19px;
+          }
+          .company-info {
+            font-size: 11px;
+            line-height: 13px;
+          }
+          .widget {
+            height: 48px;
+            font-size: 13px;
+            line-height: 19px;
+            span {
+              font-size: 13px;
+            }
+            .text {
+              font-size: 13px;
+              line-height: 19px;
+            }
+          }
+          .qr-code {
+            width: 74px;
+            height: 74px;
+            margin-top: 20px;
+          }
         }
       }
     }
