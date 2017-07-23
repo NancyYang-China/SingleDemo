@@ -93,16 +93,16 @@ class AboutUsPage extends React.Component {
         <div className="modal-content">
           <span className="close">&times;</span>
           <div className="partner-view">
-            <div style={{display: "flex", justifyContent: "space-between", marginBottom: 60}}>
+            <div className="flex-h top-view">
               <img className="partner-model-logo" src={partner.logo.url}/>
-              <a href={partner.website}  target="_blank" style={{color: "#525252", fontSize: 23, alignSelf: "flex-end"}}>{partner.website}</a>
+              <a className="web" href={partner.website}  target="_blank" >{partner.website}</a>
             </div>
-            <div>
-              <div>
-                <span style={{color: "#a80309", fontSize: 33}}>|</span>
-                <span style={{color: "#525252", fontSize: 30, marginLeft: 18}}>{partner.name}</span>
+            <div className="content-view">
+              <div className="content-header">
+                <span className="v-line">|</span>
+                <span className="title">{partner.name}</span>
               </div>
-              <p style={{color: "#525252", fontSize: 20, marginLeft: 16, marginTop: 30}}>{partner.description}</p>
+              <p className="description">{partner.description}</p>
             </div>
           </div>
         </div>
