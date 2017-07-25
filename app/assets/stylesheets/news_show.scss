@@ -110,8 +110,10 @@
       .news-content {
         font-size: 12px;
         line-height: 24px;
-        #img {
-          width: 100% !important
+        position: relative;
+        img {
+          width: 100% !important;
+          object-fit: cover;
         }
       }
       .back-content {
