@@ -18,7 +18,7 @@ class RecruitmentPage extends BasePage {
           <p className="sub-content">{recruitment.description}</p>
           <p className="sub-title">职位要求</p>
           <p className="sub-content">{recruitment.requirement}</p>
-          <p className="email"><span className="icon fa fa-envelope-o" style={{fontSize: 24}}/>    {`请将简历投递到这里... `}<span className="email-address">{email}</span></p>
+          <p className="email"><span className="icon fa fa-envelope-o"/>    {`请将简历投递到这里... `}<span className="email-address">{email}</span></p>
           {divider}
         </div>
       );

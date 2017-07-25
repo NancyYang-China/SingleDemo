@@ -94,8 +94,8 @@
       text-decoration: none;
     }
     .menu-icon {
+      display: flex;
       .icon {
-        display: flex;
         font-size: 24px;
         margin-right: 20px;
         color: #666;

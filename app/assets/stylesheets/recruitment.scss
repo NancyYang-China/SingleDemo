@@ -88,6 +88,9 @@
           line-height: 25px;
           font-weight: bold;
           white-space: pre-wrap;
+          .icon {
+            font-size: 24px;
+          }
           .email-address {
             color: #a80309; 
           }
@@ -118,8 +121,9 @@
         margin-top: 48px;
         margin-bottom: 0px;
         .recruitment-title {
-          font-size: 24px;
-          line-height: 42px;
+          font-size: 16px;
+          line-height: 43px;
+          font-weight: bold;
         }
         .back-content {
           top: 0px;
@@ -139,12 +143,33 @@
         padding: 12px;
         margin-bottom: 24px;
         .recruitment-item {
+          .title {
+            font-size: 17px;
+            line-height: 25px;
+            font-weight: bold;
+            color: #101010;
+          }
           .sub-title {
+            font-size: 13px;
+            line-height: 18px;
+            font-weight: bold;
+            color: #101010;
             margin-top: 24px;
             margin-bottom: 16px;
           }
+          .sub-content {
+            font-size: 13px;
+            line-height: 18px;
+            color: #101010;
+          }
           .email {
+            font-size: 13px;
+            line-height: 18px;
             margin-top: 24px;
+            font-weight: normal;
+            .icon {
+              font-size: 15px;
+            }
           }
           .horizontal-divider {
             margin-top: 24px;

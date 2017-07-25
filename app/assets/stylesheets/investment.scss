@@ -158,9 +158,11 @@
     min-width: 0px;
     .investment-menu {
       height: 40px;
-      padding: 0px;
+      padding: 0px 20px 0px 20px;
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
       .menu-item {
-        margin: 6px;
+        margin: 0px;
         font-size: 12px;
         line-height: 17px;
       }
