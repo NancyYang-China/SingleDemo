@@ -84,6 +84,7 @@ class InvestmentPage extends BasePage {
             </a>
             <div className="title-bar flex-h">
               <p className="title">{investment.title}</p>
+              <div className="horizontal-divider-in" />
               <div className="web-bar flex-h flex-vc">
                 <p className="pre-web">点击了解更多详情</p>
                 <a href={investment.website} target="_blank" className="website">{investment.website}</a>

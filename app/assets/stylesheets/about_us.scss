@@ -197,9 +197,11 @@
     .about-us-menu {
       width: 100%;
       height: 40px;
-      padding: 0px;
+      padding: 0px 16px 0px 16px;
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
       .menu-item {
-        margin: 6px;
+        margin: 0px;
         font-size: 12px;
         line-height: 17px;
       }
