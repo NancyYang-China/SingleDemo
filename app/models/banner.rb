@@ -3,6 +3,7 @@ class Banner < ApplicationRecord
 
   mount_uploader :image, BannerUploader
   mount_uploader :icon, ImageUploader
+  mount_uploader :mobile_banner, BannerUploader
 
   rails_admin do
     list do

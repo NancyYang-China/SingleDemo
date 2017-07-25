@@ -20,7 +20,8 @@ class SlideBanner extends React.Component {
     )
     return (
       <div key={index} className={className}>
-        <img src={banner.image.url} className='full-width'/>
+        <img src={banner.image.url} className='full-width banner-image'/>
+        <img src={banner.mobile_banner.url} className='full-width mobile-banner-image'/> 
         {contentView}
       </div>
     );

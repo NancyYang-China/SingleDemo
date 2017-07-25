@@ -8,6 +8,12 @@
     min-height: 625px;
     object-fit: cover;
   }
+  .banner-image {
+    display: flex;
+  }
+  .mobile-banner-image {
+    display: none;
+  }
   .carousel-indicators {
     position: absolute;
     bottom: 6%;
@@ -40,8 +46,14 @@
 @include respond-to(mobile) {
   #myCarousel {
    .full-width {
-      min-width: nil;
-      min-height: nil;
+      min-width: 100%;
+      min-height: 100%;
+    }
+    .banner-image {
+      display: none;
+    }
+    .mobile-banner-image {
+      display: inline-block;
     }
     .carousel-indicators li {
       width: 36px;
