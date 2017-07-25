@@ -9,6 +9,12 @@
     height: 450px;
     object-fit: cover;
   }
+  .banner-image {
+    display: flex;
+  }
+  .mobile-banner-image {
+    display: none;
+  }
   #banner-tag {
     position: absolute;
     height: 55px;
@@ -51,6 +57,12 @@
     min-width: 0px;
     .full-width {
       height: 200px;
+    }
+    .banner-image {
+      display: none;
+    }
+    .mobile-banner-image {
+      display: inline-block;
     }
     #banner-tag {
       position: absolute;
