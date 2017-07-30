@@ -70,7 +70,7 @@ class HeaderBar extends React.Component {
     )
     return (
       <div>
-      <div className='top-bar'>
+      <div className='top-bar flex-h'>
         <div className='forground'/>
         <div className='menu-content'>
           <a className='nav-logo' href='/' target="_self">

@@ -165,8 +165,6 @@
       .web {
         color: #525252;
         font-size: 23px;
-        align-self: flex-end;
-        -webkit-align-self: flex-end;
       }
     }
     .content-view {
@@ -200,6 +198,9 @@
       padding: 0px 16px 0px 16px;
       justify-content: space-between;
       -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      -o-justify-content: space-between;
       .menu-item {
         margin: 0px;
         font-size: 12px;
@@ -223,6 +224,9 @@
         .item-content {
           flex-direction: column;
           -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          -ms-flex-direction: column;
+          -o-flex-direction: column;
           .content {
             min-width: 0px;
             font-size: 11px;
@@ -282,8 +286,14 @@
         margin-bottom: 18px;
         flex-direction: column;
         -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
         align-items: center;
         -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
         .partner-model-logo {
           max-width: 60%;
           max-height: 30vw;

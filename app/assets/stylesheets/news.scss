@@ -135,9 +135,16 @@
     .news-menu {
       height: 80px;
       padding: 0px;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-flex-direction: column;
       flex-direction: column;
       justify-content: space-around;
       -webkit-justify-content: space-around;
+      -moz-justify-content: space-around;
+      -ms-justify-content: space-around;
+      -o-justify-content: space-around;
       a:hover {
         color: #a80309;
       }
@@ -151,6 +158,9 @@
         padding-right: 18px;
         justify-content: space-between;
         -webkit-justify-content: space-between;
+        -moz-justify-content: space-around;
+        -ms-justify-content: space-around;
+        -o-justify-content: space-around;
       }
       .year-item {
         font-size: 14px;
@@ -175,11 +185,18 @@
       .news-item {
         flex-direction: column;
         -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
         .news-date {
           height: 30px;
           p {
             text-align: start;
             align-self: flex-start;
+            -webkit-align-self: flex-start;
+            -moz-align-self: flex-start;
+            -ms-align-self: flex-start;
+            -o-align-self: flex-start;
             font-size: 12px;
             line-height: 17px;
           }

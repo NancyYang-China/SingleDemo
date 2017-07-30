@@ -95,7 +95,7 @@ class AboutUsPage extends React.Component {
           <div className="partner-view">
             <div className="flex-h top-view">
               <img className="partner-model-logo" src={partner.logo.url}/>
-              <a className="web" href={partner.website}  target="_blank" >{partner.website}</a>
+              <a className="web flex-ase" href={partner.website}  target="_blank" >{partner.website}</a>
             </div>
             <div className="content-view">
               <div className="content-header">

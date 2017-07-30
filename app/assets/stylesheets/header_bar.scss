@@ -4,9 +4,6 @@
   height: 60px;
   width: 100%;
   min-width: 720px;
-  display: flex;
-  display: -webkit-flex;
-  display: -ms-flex;
   position: fixed;
   box-shadow: 0px 0px 14px #aaa;
   z-index: 2;
@@ -118,6 +115,10 @@
       width: 100%;
       .menu-item {
         height: 54px;
+        -webkit-align-self: flex-end;
+        -moz-align-self: flex-end;
+        -ms-align-self: flex-end;
+        -o-align-self: flex-end;
         align-self: flex-end;
         position: relative;
         .title {

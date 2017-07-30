@@ -161,6 +161,9 @@
       padding: 0px 20px 0px 20px;
       justify-content: space-between;
       -webkit-justify-content: space-between;
+      -moz-justify-content: space-between; 
+      -ms-justify-content: space-between;
+      -o-justify-content: space-between;
       .menu-item {
         margin: 0px;
         font-size: 12px;
@@ -216,6 +219,10 @@
         margin-bottom: 12px;
       }
       .title-bar {
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
         align-items: center;
         flex-direction: column;
         .title {
@@ -230,6 +237,10 @@
           background-color: #666;
         }
         .web-bar {
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          -ms-flex-direction: column;
+          -o-flex-direction: column;
           flex-direction: column;
           .pre-web {
             color: #666666;
