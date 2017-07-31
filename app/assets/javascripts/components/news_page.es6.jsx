@@ -64,16 +64,16 @@ class NewsPage extends BasePage {
     }).map((news, index)=> {
       return (
         <a href={`/news/${news.id}`} key={index}>
-          <div className="news-item flex-h">
+          <div className="flex-h news-item">
             <div className="news-date">
               <p>{news.created_at.slice(0, 10)}</p>
               <i className="fa fa-caret-down" href="/investment"/>
             </div>
             <div className="vertical-divider"/>
-            <div className="news-description flex-v flex1">
+            <div className="flex-v flex1 news-description">
               <p className="title">{news.title}</p>
               <p>{news.description}</p>
-              <div className="horizontal-divider flex-ase"/>
+              <div className="flex-ase horizontal-divider"/>
             </div>
           </div>
         </a>
