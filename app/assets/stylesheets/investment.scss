@@ -47,7 +47,7 @@
         width: auto;
         height: auto;
         display: block;
-        object-fit: cover;
+        object-fit: contain;
       }
       p {
         width: 100%;
@@ -191,8 +191,9 @@
         height: 28vw;
         margin: 3px;
         img {
-          max-width: 80%;
-          max-height: 50vw;
+          width: 80%;
+          height: 50vw;
+          display: inline-block;
         }
         p {
           font-size: 10px;

@@ -77,6 +77,7 @@ class ContactUsPage extends BasePage {
     return (
       <div className="contact_us flex-v">
         <img className="full-width" src="assets/images/contact_us_badge.jpeg"/>
+        <div className="full-width mobile-banner-image" style={{backgroundImage: 'url(assets/images/contact_us_badge.jpeg)'}}/>
         <div className="items flex-h flex-hc" onMouseOut={e=> this.setState({activeIndex: -1})}>
           {itemsView}
         </div>

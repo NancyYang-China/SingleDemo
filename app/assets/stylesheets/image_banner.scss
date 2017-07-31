@@ -63,6 +63,12 @@
     }
     .mobile-banner-image {
       display: inline-block;
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -ms-background-size: cover;
+      -o-background-size: cover;
     }
     #banner-tag {
       position: absolute;
@@ -75,6 +81,7 @@
     }
     #line {
       height: 3px;
+      bottom: 2px;
     }
   } 
 }
