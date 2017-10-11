@@ -34,16 +34,37 @@
       line-height: 7px;
     }
   }
-  .copyright {
-    font-size: 10px;
-    text-align: center;
-    line-height: 30px;
+  .bottom_info {
     position: absolute;
-    bottom: 0px;
+    bottom: 4px;
     left: 0px;
     right: 0px;
     background: #fff;
     z-index: 2;
+    .copyright {
+      font-size: 12px;
+      text-align: center;
+      line-height: 24px;
+      margin: 0 auto;
+    }
+    .gab {
+      margin: 0 auto;
+      .gab_link {
+        display: inline-block;
+        text-decoration: none;
+        .gab_icon {
+          float:left;
+        }
+        .gab_title {
+          float: left;
+          height: 20px;
+          font-size: 12px;
+          line-height: 20px;
+          margin: 0px 0px 0px 5px;
+          color: #939393;
+        }
+      }
+    }
   }
 }
 
@@ -56,8 +77,23 @@
     .menuList {
       display: none
     }
-    .copyright {
-      margin: 0px;
+    .bottom_info {
+      .copyright {
+        margin: 0px;
+        font-size: 10px;
+      }
+      .gab {
+        .gab_link {
+          .gab_icon {
+            width: 16px;
+            height: 16px;
+          }
+          .gab_title {
+            line-height: 16px;
+            font-size: 10px;
+          }
+        }
+      }
     }
   }
 }
