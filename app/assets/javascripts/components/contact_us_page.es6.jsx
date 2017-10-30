@@ -47,7 +47,7 @@ class ContactUsPage extends BasePage {
             021-33563256<br/>
             xiangms@sharewin-sh.com<br/>
             上海市桂平路391号<br/>
-            新漕河泾国际商务中心A座28
+            新漕河泾国际商务中心A座28楼
           </p>
         </div>
       )
