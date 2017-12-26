@@ -56,9 +56,9 @@ ActiveRecord::Schema.define(version: 20170725171845) do
   create_table "investments", force: :cascade do |t|
     t.string   "title"
     t.string   "logo"
-    t.string   "description",            limit: 70
-    t.datetime "created_at",                        null: false
-    t.datetime "updated_at",                        null: false
+    t.string   "description",            limit: 210
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
     t.integer  "investment_category_id"
     t.string   "website"
     t.integer  "position"

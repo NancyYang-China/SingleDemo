@@ -1,12 +1,7 @@
 class News < ApplicationRecord
   default_scope { order('created_at DESC') }
   enum category: [:news, :point]
-  mount_uploader :image1, AssetUploader
-  mount_uploader :image2, AssetUploader
-  mount_uploader :image3, AssetUploader
-  mount_uploader :image4, AssetUploader
-  mount_uploader :image5, AssetUploader
-  mount_uploader :image6, AssetUploader
+  validates :created_at, :presence => true
 
   rails_admin do
     edit do
@@ -15,12 +10,6 @@ class News < ApplicationRecord
       field :category
       field :description
       field :content, :ck_editor
-      # field :image1
-      # field :image2
-      # field :image3
-      # field :image4
-      # field :image5
-      # field :image6
    end
  
     list do
