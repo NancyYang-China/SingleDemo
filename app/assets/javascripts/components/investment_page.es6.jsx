@@ -79,7 +79,7 @@ class InvestmentPage extends BasePage {
         <div className="modal-content">
           <span className="close">&times;</span>
           <div className="investment-view flex-v flex-vc">
-            <a className="flex-h flex-hc" href={investment.website} target="_blank">
+            <a className="flex-h flex-hc flex-vc" href={investment.website} target="_blank">
               <img src={investment.logo.url}/>
             </a>
             <div className="title-bar flex-h">
