@@ -14,9 +14,9 @@ class HeaderBar extends React.Component {
     }, {
       path: '/news',
       name: '公司动态'
-    }, {
-      path: '/shengzihui',
-      name: '盛资汇'
+    // }, {
+    //   path: '/shengzihui',
+    //   name: '盛资汇'
     }, {
       path: '/contact_us',
       name: '联系我们'

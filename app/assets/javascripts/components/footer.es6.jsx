@@ -33,12 +33,12 @@ class Footer extends React.Component {
         path: '/news',
         name: '观点分享'
       }]
-    }, {
-      title: '盛资汇',
-      items: [{
-        path: '/shengzihui',
-        name: '盛资汇'
-      }]
+    // }, {
+    //   title: '盛资汇',
+    //   items: [{
+    //     path: '/shengzihui',
+    //     name: '盛资汇'
+    //   }]
     }, {
       title: '联系我们',
       items: [{

@@ -3,12 +3,41 @@ class NewsPage extends BasePage {
   constructor(props) {
     super(props)
 
+    const groups = props.news.reduce((acc, item) => {
+      const key = item.created_at.slice(0, 4)
+      acc[key] = acc[key] || []
+      acc[key].push(item)
+
+      return acc
+    }, {})
+    this.years = Object.keys(groups).sort().reverse().slice(0, 3).concat("old")
     this.state = {
       category: 'news',
-      year: "2017"
+      year: this.years[0]
     }
+  }
 
-    this.years = ["2017", "2016", "2015", "old"]
+  componentDidMount() {
+    var newState = {
+      category: 'news',
+      year: this.years[0]
+    }
+    if (window.category != undefined) {
+      newState.category = window.category
+    }
+    if (window.year != undefined) {
+      newState.year = window.year
+    }
+    this.setState(newState)
+    super.componentDidMount()
+  }
+
+  componentWillUnmount() {
+    const { category, year } = this.state
+
+    window.category = category
+    window.year = year
+    super.componentWillUnmount()
   }
 
   _path() {
@@ -20,7 +49,7 @@ class NewsPage extends BasePage {
 
     return (
       <a style={{color}} className="menu-item" onClick={()=> {
-        this.setState({category: item.category, year: "2017"})
+        this.setState({category: item.category})
         }}>
         {item.name}
       </a>
@@ -46,7 +75,7 @@ class NewsPage extends BasePage {
           {this._renderMenuItem({category: "news", name: "公司新闻"})}
           <div className="vertical-divider" />
           {this._renderMenuItem({category: "point", name: "观点分享"})}
-        </div>          
+        </div>
         <div className="years-bar flex-h">
           {yearsBar}
         </div>
@@ -59,7 +88,7 @@ class NewsPage extends BasePage {
     const { category, year } = this.state;
 
     const newsListView = news.filter(news=> {
-      const filterYear = year === "old" ? news.created_at.slice(0, 4) < 2015 : news.created_at.slice(0, 4) === year;
+      const filterYear = year === "old" ? !this.years.includes(news.created_at.slice(0, 4)) : news.created_at.slice(0, 4) === year;
       return (news.category === this.state.category) && filterYear
     }).map((news, index)=> {
       return (
@@ -84,7 +113,7 @@ class NewsPage extends BasePage {
     for(var i = 0; i < count; i++){
       newsListView.push(
         <div key={`others-${i}`} className="empty-item" />
-      ) 
+      )
     }
 
     return (
@@ -110,5 +139,3 @@ class NewsPage extends BasePage {
     )
   }
 }
-
-
