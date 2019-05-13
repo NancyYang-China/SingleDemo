@@ -28,7 +28,7 @@ class HeaderBar extends React.Component {
     const { path } = this.props;
     if (!showModel) return null;
 
-    var itemsView = [{path: '/', name: "首页"}].concat(this.menus).map((menu, index)=> {
+    var itemsView = [{path: '/home', name: "首页"}].concat(this.menus).map((menu, index)=> {
       var color = path.indexOf(menu.path) < 0 ? "#000000" : "#a80309"
       if (index === 0) {
         color = path.length < 2 ? "#a80309" : "#000000"
@@ -73,7 +73,7 @@ class HeaderBar extends React.Component {
       <div className='top-bar flex-h'>
         <div className='forground'/>
         <div className='menu-content'>
-          <a className='nav-logo' href='/' target="_self">
+          <a className='nav-logo' href='/home' target="_self">
             <img className='nav-logo' src={`${pp}assets/images/logo.png`}/>
           </a>
           <div className='menu-bar'>

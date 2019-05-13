@@ -1,6 +1,10 @@
 class HomeController < ApplicationController
   # before_action :authenticate_user!, :only => [:index]
 
+  def statement
+    redirect_to '/statement.html'
+  end
+
   def index
     render component: 'HomePage', props: { banners: Banner.all }
   end
@@ -14,7 +18,7 @@ class HomeController < ApplicationController
   end
 
   def shengzihui
-    render component: 'ShengZiHuiPage', 
+    render component: 'ShengZiHuiPage',
            props: {
              news: Shengzihui.all.order(created_at: 'desc').map { |item|
                  {
@@ -24,7 +28,7 @@ class HomeController < ApplicationController
                    created_at: item.created_at,
                    assets: [item.image1, item.image2, item.image3, item.image4, item.image5, item.image6].map{|asset| asset.url}.compact
                  }
-              }, 
+              },
              banner: Banner.find("4")
            }
   end
