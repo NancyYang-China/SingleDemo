@@ -29,6 +29,7 @@ zh-CN:
   news_category:
     point: "观点分享"
     news: "公司新闻"
+    dynamic: "组合动态"
     szh: "盛资汇"
   
   admin:
@@ -84,6 +85,7 @@ zh-CN:
         updated_at: "最后修改时间"
         news: 新闻动态
         point: "观点分享"
+        dynamic: "组合动态"
         image1: "图片"
         image2: "图片"
         image3: "图片"

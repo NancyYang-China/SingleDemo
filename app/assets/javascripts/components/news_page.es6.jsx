@@ -75,6 +75,8 @@ class NewsPage extends BasePage {
           {this._renderMenuItem({category: "news", name: "公司新闻"})}
           <div className="vertical-divider" />
           {this._renderMenuItem({category: "point", name: "观点分享"})}
+          <div className="vertical-divider" />
+          {this._renderMenuItem({category: "dynamic", name: "组合动态"})}
         </div>
         <div className="years-bar flex-h">
           {yearsBar}

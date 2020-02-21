@@ -1,6 +1,6 @@
 class News < ApplicationRecord
   default_scope { order('created_at DESC') }
-  enum category: [:news, :point]
+  enum category: [:news, :point, :dynamic]
   validates :created_at, :presence => true
 
   rails_admin do
