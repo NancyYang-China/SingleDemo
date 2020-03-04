@@ -171,7 +171,7 @@ GEM
       ast (~> 2.2)
     pg (0.20.0)
     powerpack (0.1.1)
-    puma (3.9.1)
+    puma (3.12.4)
     rack (2.0.3)
     rack-pjax (1.0.0)
       nokogiri (~> 1.5)
@@ -321,7 +321,7 @@ DEPENDENCIES
   listen (~> 3.0.5)
   mini_magick
   pg
-  puma (~> 3.0)
+  puma (~> 3.12)
   rails (~> 5.0.3)
   rails-erd
   rails-i18n
