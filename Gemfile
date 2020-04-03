@@ -11,7 +11,7 @@ gem 'rails', '~> 5.0.3'
 # Use postgreSQL  as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 3.12'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '~> 5.0'
@@ -51,7 +51,7 @@ gem 'devise-i18n'
 gem 'rails_admin', '~> 1.2'
 
 # Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 gem 'mini_magick'
 
 # Automatic Ruby code style checking tool. (http://github.com/bbatsov/rubocop)
