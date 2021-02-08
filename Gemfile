@@ -51,7 +51,7 @@ gem 'devise-i18n'
 gem 'rails_admin', '~> 1.2'
 
 # Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 gem 'mini_magick'
 
 # Automatic Ruby code style checking tool. (http://github.com/bbatsov/rubocop)
