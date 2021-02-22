@@ -173,7 +173,7 @@ GEM
       ast (~> 2.2)
     pg (0.20.0)
     powerpack (0.1.1)
-    puma (3.12.4)
+    puma (3.12.6)
     rack (2.2.3)
     rack-pjax (1.0.0)
       nokogiri (~> 1.5)
