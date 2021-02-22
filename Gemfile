@@ -48,7 +48,7 @@ gem 'devise-bootstrap-views'
 gem 'devise-i18n'
 
 # RailsAdmin is a Rails engine that provides an easy-to-use interface for managing your data
-gem 'rails_admin', '~> 1.2'
+gem 'rails_admin', '~> 1.4'
 
 # Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks
 gem 'carrierwave', '~> 1.3'
