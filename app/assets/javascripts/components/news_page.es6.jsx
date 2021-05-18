@@ -10,34 +10,27 @@ class NewsPage extends BasePage {
 
       return acc
     }, {})
-    this.years = Object.keys(groups).sort().reverse().slice(0, 3).concat("old")
+
     this.state = {
       category: 'news',
-      year: this.years[0]
     }
   }
 
   componentDidMount() {
     var newState = {
       category: 'news',
-      year: this.years[0]
     }
     if (window.category != undefined) {
       newState.category = window.category
     }
-    if (window.year != undefined) {
-      newState.year = window.year
-    }
+
     this.setState(newState)
-    super.componentDidMount()
   }
 
   componentWillUnmount() {
-    const { category, year } = this.state
+    const { category } = this.state
 
     window.category = category
-    window.year = year
-    super.componentWillUnmount()
   }
 
   _path() {
@@ -57,29 +50,16 @@ class NewsPage extends BasePage {
   }
 
   _renderMenu() {
-    const yearsBar = this.years.map((year, index)=> {
-      var content = year === "old" ? "以往" : year;
-      var color = this.state.year === year ? "#a80309" : "#000000"
-      return (
-        <a key={index} style={{color}} className="year-item" onClick={()=> {
-            this.setState({year});
-          }}>
-          {content}
-        </a>
-      )
-    })
-
     return (
       <div className="news-menu flex-h flex-vc">
         <div className="flex-h">
           {this._renderMenuItem({category: "news", name: "公司新闻"})}
           <div className="vertical-divider" />
+          {this._renderMenuItem({category: "dynamic", name: "组合动态"})}
+          <div className="vertical-divider" />
           {this._renderMenuItem({category: "point", name: "观点分享"})}
           <div className="vertical-divider" />
-          {this._renderMenuItem({category: "dynamic", name: "组合动态"})}
-        </div>
-        <div className="years-bar flex-h">
-          {yearsBar}
+          {this._renderMenuItem({category: "recruit", name: "招聘"})}
         </div>
       </div>
     )
@@ -87,11 +67,10 @@ class NewsPage extends BasePage {
 
   _renderList() {
     const { news } = this.props;
-    const { category, year } = this.state;
+    const { category } = this.state;
 
     const newsListView = news.filter(news=> {
-      const filterYear = year === "old" ? !this.years.includes(news.created_at.slice(0, 4)) : news.created_at.slice(0, 4) === year;
-      return (news.category === this.state.category) && filterYear
+      return (news.category === category)
     }).map((news, index)=> {
       return (
         <a href={`/news/${news.id}`} key={index}>

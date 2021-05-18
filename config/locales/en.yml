@@ -30,6 +30,7 @@ en:
     point: "Point View"
     news: "News"
     szh: "ShengZiHui"
+    recruit: "Recruitment"
 
   activerecord:
     models:
