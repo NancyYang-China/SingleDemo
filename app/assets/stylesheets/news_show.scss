@@ -20,6 +20,16 @@
       }
     }
   }
+  .mailTo {
+    position: fixed;
+    top: 80%;
+    right: 20px;
+    z-index: 5;
+    .icon {
+      width: 60px;
+      height: auto;  
+    }
+  }
   .news-show-content {
     margin-top: 20px;
     width: 1200px;
@@ -89,6 +99,16 @@
     min-width: 0px;
     .full-width {
       display: none;
+    }
+    .mailTo {
+      position: fixed;
+      top: 80%;
+      right: 20px;
+      z-index: 5;
+      .icon {
+        width: 60px;
+        height: auto;  
+      }
     }
     .news-show-content {
       width: 100%;

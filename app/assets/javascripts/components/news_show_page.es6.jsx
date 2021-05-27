@@ -31,6 +31,8 @@ class NewsShowPage extends BasePage {
   }
 
   _render() {
+    const { news } = this.props;
+
     return (
       <div className="news-show flex-v">
         <div className="full-width">
@@ -39,6 +41,9 @@ class NewsShowPage extends BasePage {
           </div>
         </div>
         {this._renderContent()}
+        {news.category === 'recruit' && <a className='mailTo' href="mailto:zhaopin@sharewin-sh.com">
+          <img className='icon' src={"../assets/images/email.png"}/>
+        </a>}
       </div>
     )
   }
