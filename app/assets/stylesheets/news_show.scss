@@ -23,11 +23,11 @@
   .mailTo {
     position: fixed;
     top: 80%;
-    right: 20px;
+    right: 0px;
     z-index: 5;
     .icon {
-      width: 60px;
-      height: auto;  
+      width: auto;
+      height: 60px;  
     }
   }
   .news-show-content {
@@ -103,11 +103,11 @@
     .mailTo {
       position: fixed;
       top: 80%;
-      right: 20px;
+      right: 0px;
       z-index: 5;
       .icon {
-        width: 60px;
-        height: auto;  
+        width: auto;
+        height: 60px;  
       }
     }
     .news-show-content {
