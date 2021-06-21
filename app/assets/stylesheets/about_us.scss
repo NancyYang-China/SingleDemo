@@ -75,17 +75,18 @@
       overflow: hidden;
       @keyframes partner-banner-swipe {
         0% { left: 0; }
-        20% { left: -408px; }
-        40% { left: -816px; }
-        60% { left: -1224px; }
-        80% { left: -1624px; }
-        100% { left: -2040px; }
+        16.66% { left: -408px; }
+        33.33% { left: -816px; }
+        50% { left: -1224px; }
+        66.66% { left: -1624px; }
+        83.33% { left: -2040px; }
+        100% { left: -2448px; }
       }
       .list {
         margin-top: 5px;
-        width: 2438px;
+        width: 3662px;
         position: relative;
-        animation: partner-banner-swipe 20s ease-in infinite;
+        animation: partner-banner-swipe 24s ease-in infinite;
         .item {
           // min-width: 304px;;
           // min-height: 152px;
@@ -125,14 +126,14 @@
       margin-bottom: 80px;
       overflow: hidden;
       @keyframes hornor-banner-swipe {
-        0% { left: 0; }
-        33.33% { left: -408px; }
-        66.66% { left: -816px; }
-        100% { left: -1224px; }
+        0% { left: -408px; }
+        33.33% { left: -816px; }
+        66.66% { left: -1224px; }
+        100% { left: -1648px; }
       }      
       .list {
         margin-top: 5px;
-        width: 2438px;
+        width: 2846px;
         position: relative;
         animation: hornor-banner-swipe 12s ease-in infinite;
         .item {

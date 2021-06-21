@@ -28,18 +28,19 @@ class AboutUsPage extends React.Component {
   _renderPanterList() {
     const { partners } = this.props;
     if (!partners) return null;
+    console.log(partners, partners.concat(partners.slice(0, 3)))
 
-    const partnersView = partners.concat(partners.slice(0, 2)).map(partner=> {
+    const partnersView = partners.concat(partners.slice(0, 3)).map((partner, index)=> {
       return (
-        <div className="item flex-v flex-vc flex-hc" key={partner.id} onClick={()=> this.setState({partner})}>
+        <div className="item flex-v flex-vc flex-hc" key={`${partner.id}_${index}`} onClick={()=> this.setState({partner})}>
           <img src={partner.logo.url} />
         </div>
       );
     })
-  
+    console.log(partnersView.length)
     return (
       <div className="list flex-hc flex-h">
-      {partnersView}
+        {partnersView}
       </div>
     );
   }
@@ -48,9 +49,9 @@ class AboutUsPage extends React.Component {
     const { hornors } = this.props;
     if (!hornors) return null;
 
-    const hornorsView = hornors.concat(hornors.slice(0, 2)).map(hornor=> {
+    const hornorsView = hornors.concat(hornors.slice(0, 3)).map((hornor, index)=> {
       return (
-        <div className="item flex-v flex-vc flex-hc" key={hornor.id}>
+        <div className="item flex-v flex-vc flex-hc" key={`${hornor.id}_${index}`}>
           <img src={hornor.image.url} />
         </div>
       );
