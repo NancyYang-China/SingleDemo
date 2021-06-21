@@ -1,10 +1,9 @@
-require 'carrierwave/processing/mini_magick'
-class BannerUploader < CarrierWave::Uploader::Base
+class HornorUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   include CarrierWave::MiniMagick
 
-  process resize_to_fit: [1440, 730]
+  process resize_to_fit: [720, 1279]
 
   # Choose what kind of storage to use for this uploader:
   storage :file

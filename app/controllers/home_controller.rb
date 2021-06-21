@@ -10,7 +10,7 @@ class HomeController < ApplicationController
   end
 
   def about_us
-    render component: 'AboutUsPage', props: { infos: Info.all, partners: Partner.all }
+    render component: 'AboutUsPage', props: { infos: Info.all, partners: Partner.all, hornors: Hornor.all }
   end
 
   def investment
@@ -20,15 +20,15 @@ class HomeController < ApplicationController
   def shengzihui
     render component: 'ShengZiHuiPage',
            props: {
-             news: Shengzihui.all.order(created_at: 'desc').map { |item|
-                 {
-                   id: item.id,
-                   title: item.title,
-                   content: item.content,
-                   created_at: item.created_at,
-                   assets: [item.image1, item.image2, item.image3, item.image4, item.image5, item.image6].map{|asset| asset.url}.compact
-                 }
-              },
+             news: Shengzihui.all.order(created_at: 'desc').map do |item|
+                     {
+                       id: item.id,
+                       title: item.title,
+                       content: item.content,
+                       created_at: item.created_at,
+                       assets: [item.image1, item.image2, item.image3, item.image4, item.image5, item.image6].map(&:url).compact
+                     }
+                   end,
              banner: Banner.find("4")
            }
   end

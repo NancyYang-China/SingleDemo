@@ -5,5 +5,4 @@ class NewsControllerTest < ActionDispatch::IntegrationTest
     get news_show_url
     assert_response :success
   end
-
 end

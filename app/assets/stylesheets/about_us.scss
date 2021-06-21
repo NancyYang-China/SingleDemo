@@ -72,20 +72,20 @@
       min-width: 944px;
       margin-left: 144px;
       margin-right: 112px;
-      margin-bottom: 80px;
+      overflow: hidden;
+      @keyframes partner-banner-swipe {
+        0% { left: 0; }
+        20% { left: -408px; }
+        40% { left: -816px; }
+        60% { left: -1224px; }
+        80% { left: -1624px; }
+        100% { left: -2040px; }
+      }
       .list {
         margin-top: 5px;
-        width: 100%;
+        width: 2438px;
         position: relative;
-        .empty-item {
-          // min-width: 304px;
-          // min-height: 152px;
-          // width: calc(33.33% - 10px);
-          // height: 16.66vw;
-          width: 398px;
-          height: 199px;
-          margin: 5px;
-        }
+        animation: partner-banner-swipe 20s ease-in infinite;
         .item {
           // min-width: 304px;;
           // min-height: 152px;
@@ -112,6 +112,47 @@
             bottom: 0px;
             text-align: center;
             color: #757575;
+          }
+        }
+      }
+    }
+    .hornor-item {
+      padding-top: 102px;
+      margin-top: -48px;
+      min-width: 944px;
+      margin-left: 144px;
+      margin-right: 112px;
+      margin-bottom: 80px;
+      overflow: hidden;
+      @keyframes hornor-banner-swipe {
+        0% { left: 0; }
+        33.33% { left: -408px; }
+        66.66% { left: -816px; }
+        100% { left: -1224px; }
+      }      
+      .list {
+        margin-top: 5px;
+        width: 2438px;
+        position: relative;
+        animation: hornor-banner-swipe 12s ease-in infinite;
+        .item {
+          // min-width: 304px;;
+          // min-height: 152px;
+          // width: calc(33.33% - 10px);
+          // height: 16.66vw;
+          width: 398px;
+          height: 707px;
+          position: relative;
+          background: #fff;
+          margin: 5px;
+          cursor: pointer;
+          img {
+            max-width: 398px;
+            max-height: 707px;
+            width: 398px;
+            height: 707px;
+            display: block;
+            object-fit: contain;
           }
         }
       }
