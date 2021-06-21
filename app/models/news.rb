@@ -1,7 +1,7 @@
 class News < ApplicationRecord
   default_scope { order('created_at DESC') }
   enum category: [:news, :point, :dynamic, :recruit]
-  validates :created_at, :presence => true
+  validates :created_at, presence: true
 
   rails_admin do
     edit do
@@ -11,7 +11,7 @@ class News < ApplicationRecord
       field :description
       field :content, :ck_editor
     end
- 
+
     list do
       field :id
       field :title
@@ -27,7 +27,7 @@ class News < ApplicationRecord
         label I18n.t('created_at')
       end
     end
-    
+
     show do
       field :title
       field :description

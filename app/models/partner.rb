@@ -11,7 +11,7 @@ class Partner < ApplicationRecord
       field :website
       field :description
     end
-  
+
     list do
       sort_by :position
       field :position

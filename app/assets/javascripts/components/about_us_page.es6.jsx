@@ -16,7 +16,8 @@ class AboutUsPage extends React.Component {
       );
     });
 
-    items.push(<a className="menu-item" key={0} href="#0">产业伙伴</a>)
+    items.push(<a className="menu-item" key={'partner'} href="#partner">产业伙伴</a>)
+    items.push(<a className="menu-item" key={'hornor'} href="#hornor">盛宇荣耀</a>)
     return (
       <div className="about-us-menu flex-h flex-hc flex-vc">
         {items}
@@ -35,17 +36,29 @@ class AboutUsPage extends React.Component {
         </div>
       );
     })
-
-    var count = (3 - partners.length%3)%3
-    for(var i = 0; i < count; i++){
-      partnersView.push(
-        <div key={`others-${i}`} className="empty-item" />
-      ) 
-    }
   
     return (
-      <div className="list flex-vw flex-hc flex-h">
-        {partnersView}
+      <div className="list flex-hc flex-h">
+      {partnersView}
+      </div>
+    );
+  }
+
+  _renderHornorList() {
+    const { hornors } = this.props;
+    if (!hornors) return null;
+
+    const hornorsView = hornors.map(hornor=> {
+      return (
+        <div className="item flex-v flex-vc flex-hc" key={hornor.id}>
+          <img src={hornor.image.url} />
+        </div>
+      );
+    })
+  
+    return (
+      <div className="list flex-hc flex-h">
+        {hornorsView}
       </div>
     );
   }
@@ -68,12 +81,22 @@ class AboutUsPage extends React.Component {
     });
 
     items.push(
-      <div id={0} key={0} className="partner-item">
+      <div id={'partner'} key={'partner'} className="partner-item">
         <p className="title">
           <span className="item-s">|</span>
           <span className="item-title">产业伙伴</span>
         </p>
         {this._renderPanterList()}
+      </div>
+     )
+
+     items.push(
+      <div id={'hornor'} key={'hornor'} className="hornor-item">
+        <p className="title">
+          <span className="item-s">|</span>
+          <span className="item-title">盛宇荣耀</span>
+        </p>
+        {this._renderHornorList()}
       </div>
      )
 

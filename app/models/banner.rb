@@ -17,6 +17,6 @@ class Banner < ApplicationRecord
       field :created_at do
         label I18n.t('created_at')
       end
-    end  
+    end
   end
 end

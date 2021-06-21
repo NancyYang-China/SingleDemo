@@ -5,5 +5,4 @@ class RecruitmentControllerTest < ActionDispatch::IntegrationTest
     get recruitment_index_url
     assert_response :success
   end
-
 end

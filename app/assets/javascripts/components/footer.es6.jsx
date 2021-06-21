@@ -8,7 +8,8 @@ class Footer extends React.Component {
         name: info.name
       }
     })
-    aboutUsItems.push({ path: '/about_us#0', name: '产业伙伴' })
+    aboutUsItems.push({ path: '/about_us#partner', name: '产业伙伴' })
+    aboutUsItems.push({ path: '/about_us#hornor', name: '盛宇荣耀' })
     console.log(aboutUsItems);
 
     var investmentsItems = this.props.inCas.map(inca=> {
