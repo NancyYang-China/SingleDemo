@@ -86,7 +86,7 @@
         margin-top: 5px;
         width: 3662px;
         position: relative;
-        animation: partner-banner-swipe 24s ease-in infinite;
+        animation: partner-banner-swipe 24s linear infinite;
         .item {
           // min-width: 304px;;
           // min-height: 152px;
@@ -126,16 +126,21 @@
       margin-bottom: 80px;
       overflow: hidden;
       @keyframes hornor-banner-swipe {
-        0% { left: -408px; }
-        33.33% { left: -816px; }
-        66.66% { left: -1224px; }
-        100% { left: -1648px; }
+        0% { left: -816px; }
+        12.5% { left: -1224px; }
+        25% { left: -1624px; }
+        37.5% { left: -2040px; }
+        50% { left: -2448px; }
+        62.5% { left: -2856px; }
+        75% { left: -3264px; }
+        87.5% { left: -3672px; }
+        100% { left: -4080px; }
       }      
       .list {
         margin-top: 5px;
-        width: 2846px;
+        width: 4478px;
         position: relative;
-        animation: hornor-banner-swipe 12s ease-in infinite;
+        animation: hornor-banner-swipe 32s linear infinite;
         .item {
           // min-width: 304px;;
           // min-height: 152px;
@@ -314,7 +319,7 @@
           margin-top: 5px;
           width: 2127px;
           position: relative;
-          animation: partner-banner-swipe 24s ease-in infinite;
+          animation: partner-banner-swipe 24s linear infinite;
           .item {
             width: 231px;
             height: 115.5px;
@@ -336,17 +341,21 @@
         margin-bottom: 18px;
 
         @keyframes hornor-banner-swipe {
-          0% { left: -237px; }
-          25% { left: -474px; }
-          50% { left: -711px; }
-          75% { left: -948px; }
-          100% { left: -1185px; }
+          0% { left: -474px; }
+          12.5% { left: -711px; }
+          25% { left: -948px; }
+          37.5% { left: -1185px; }
+          50% { left: -1422px; }
+          62.5% { left: -1659px; }
+          75% { left: -1896px; }
+          87.5% { left: -2133px; }
+          100% { left: -2370px; }
         } 
         .list {
           margin-top: 5px;
-          width: 2127px;
+          width: 2601px;
           position: relative;
-          animation: hornor-banner-swipe 16s ease-in infinite;
+          animation: hornor-banner-swipe 32s linear infinite;
           .item {
             width: 231px;
             height: 410px;
