@@ -10,7 +10,7 @@ class HomeController < ApplicationController
   end
 
   def about_us
-    render component: 'AboutUsPage', props: { infos: Info.all, partners: Partner.all, hornors: Hornor.all }
+    render component: 'AboutUsPage', props: { infos: Info.all, partners: Partner.all.order(position: 'asc'), hornors: Hornor.all.order(position: 'asc') }
   end
 
   def investment
