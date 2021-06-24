@@ -127,20 +127,22 @@
       overflow: hidden;
       @keyframes hornor-banner-swipe {
         0% { left: 0; }
-        12.5% { left: -408px; }
-        25% { left: -816px; }
-        37.5% { left: -1224px; }
-        50% { left: -1624px; }
-        62.5% { left: -2040px; }
-        75% { left: -2448px; }
-        87.5% { left: -2856px; }
-        100% { left: -3264px; }
+        10% { left: -408px; }
+        20% { left: -816px; }
+        30% { left: -1224px; }
+        40% { left: -1624px; }
+        50% { left: -2040px; }
+        60% { left: -2448px; }
+        70% { left: -2856px; }
+        80% { left: -3264px; }
+        90% { left: -3672px; }
+        100% { left: -4080px; }
       }      
       .list {
         margin-top: 5px;
         width: 4488px;
         position: relative;
-        animation: hornor-banner-swipe 32s linear infinite;
+        animation: hornor-banner-swipe 40s linear infinite;
         .item {
           // min-width: 304px;;
           // min-height: 152px;
@@ -149,7 +151,6 @@
           width: 398px;
           height: 712px;
           position: relative;
-          background: rgb(255, 255, 255);
           margin: 5px;
           cursor: pointer;
           img {
@@ -341,20 +342,22 @@
 
         @keyframes hornor-banner-swipe {
           0% { left: 0px; }
-          12.5% { left: -237px; }
-          25% { left: -474px; }
-          37.5% { left: -711px; }
-          50% { left: -948px; }
-          62.5% { left: -1185px; }
-          75% { left: -1422px; }
-          87.5% { left: -1659px; }
-          100% { left: -1896px; }
+          10% { left: -237px; }
+          20% { left: -474px; }
+          30% { left: -711px; }
+          40% { left: -948px; }
+          50% { left: -1185px; }
+          60% { left: -1422px; }
+          70% { left: -1659px; }
+          80% { left: -1896px; }
+          90% { left: -2133px; }
+          100% { left: -2370px; }
         } 
         .list {
           margin-top: 5px;
-          width: 2607px;
+          width: 3081px;
           position: relative;
-          animation: hornor-banner-swipe 32s linear infinite;
+          animation: hornor-banner-swipe 40s linear infinite;
           .item {
             width: 231px;
             height: 412px;
