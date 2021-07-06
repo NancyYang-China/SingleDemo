@@ -48,7 +48,7 @@ class AboutUsPage extends React.Component {
     const { hornors } = this.props;
     if (!hornors) return null;
 
-    const hornorsView = hornors.concat(hornors.slice(0, 3)).map((hornor, index)=> {
+    const hornorsView = hornors.concat(hornors.slice(0, 4)).map((hornor, index)=> {
       return (
         <div className="item flex-v flex-vc flex-hc" key={`${hornor.id}_${index}`}>
           <img src={hornor.image.url} alt={hornor.title} />
