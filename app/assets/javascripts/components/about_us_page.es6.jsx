@@ -190,6 +190,7 @@ class AboutUsPage extends React.Component {
     return (
       <div className="about_us flex-v">
         <HeaderBar path="/about_us"/>
+        <FloatStatement />
         <ImageBanner tag="About us" src="assets/images/about_us_badge.jpeg" />
         {this._renderMenu()}
         {this._renderContent()}

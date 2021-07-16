@@ -1,0 +1,31 @@
+@import 'mixins';
+
+@keyframes floating-statement {
+  0% { right: 10px; bottom: 200px; }
+  25% { right: 40px; bottom: 400px; }
+  50% { right: 0; bottom: 600px; }
+  75% { right: 40px; bottom: 400px; }
+  100% { right: 10px; bottom: 200px; }
+}
+
+.float-statement {
+  width: 140px;
+  height: auto;
+  z-index: 1;
+  position: fixed;
+  right: 10px;
+  bottom: 300px;
+  background-color: transparent;
+  border-width: 0px;
+  .image {
+    width: 140px;
+    height: auto;  
+  }
+  animation: floating-statement 10s linear infinite;
+}
+
+@include respond-to(mobile) {
+  .float-statement {
+    visibility: hidden;
+  }
+}

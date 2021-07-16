@@ -9,6 +9,7 @@ class BasePage extends React.Component {
       <div>
         <HeaderBar path={this._path()}/>
         {this._render()}
+        <FloatStatement />
       </div>
     )
   }
