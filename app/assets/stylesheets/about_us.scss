@@ -72,8 +72,11 @@
       margin-top: 118px;
       margin-left: 94px;
       margin-right: 20px;
-      border-radius: 15px;
+      border-width: 0px;
       font-size: large;
+    }
+    .control-arrow-left:disabled {
+      opacity: 0.2;
     }
     .control-arrow-right {
       width: 30px;
@@ -81,8 +84,11 @@
       margin-top: 118px;
       margin-left: 20px;
       margin-right: 62px;
-      border-radius: 15px;
+      border-width: 0px;
       font-size: large;
+    }
+    .control-arrow-right:disabled {
+      opacity: 0.2;
     }
     .partner-item {
       padding-top: 102px;

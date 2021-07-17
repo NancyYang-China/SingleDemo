@@ -99,7 +99,7 @@ class AboutUsPage extends React.Component {
             }
           }
         }>
-          {String.fromCharCode(8592)}
+          {String.fromCharCode(9668)}
         </button>
         <div id={'partner'} key={'partner'} className="partner-item">
           <p className="title">
@@ -116,7 +116,7 @@ class AboutUsPage extends React.Component {
             }
           }
         }>
-          {String.fromCharCode(8594)}
+          {String.fromCharCode(9658)}
         </button>
       </div>
     )
@@ -131,7 +131,7 @@ class AboutUsPage extends React.Component {
             }
           }
         }>
-          {String.fromCharCode(8592)}
+          {String.fromCharCode(9668)}
         </button>
         <div id={'hornor'} key={'hornor'} className="hornor-item">
           <p className="title">
@@ -148,7 +148,7 @@ class AboutUsPage extends React.Component {
               }
             }
           }>
-          {String.fromCharCode(8594)}
+          {String.fromCharCode(9658)}
         </button>
       </div>
      )
