@@ -12,26 +12,27 @@ class NewsPage extends BasePage {
     }, {})
 
     this.state = {
-      category: 'news',
-    }
-  }
-
-  componentDidMount() {
-    var newState = {
-      category: 'news',
-    }
-    if (window.category != undefined) {
-      newState.category = window.category
+      category: props.category || 'news',
     }
 
-    this.setState(newState)
   }
 
-  componentWillUnmount() {
-    const { category } = this.state
+  // componentDidMount() {
+  //   var newState = {
+  //     category: 'news',
+  //   }
+  //   if (window.category != undefined) {
+  //     newState.category = window.category
+  //   }
+    
+  //   this.setState(newState)
+  // }
 
-    window.category = category
-  }
+  // componentWillUnmount() {
+  //   const { category } = this.state
+
+  //   window.category = category
+  // }
 
   _path() {
     return "/news"

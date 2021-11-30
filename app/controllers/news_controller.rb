@@ -1,6 +1,6 @@
 class NewsController < ApplicationController
   def index
-    render component: 'NewsPage', props: { news: News.all }
+    render component: 'NewsPage', props: { news: News.all, category: params[:category] }
   end
 
   def show

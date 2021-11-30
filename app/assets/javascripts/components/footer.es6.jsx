@@ -28,11 +28,17 @@ class Footer extends React.Component {
     }, {
       title: '公司动态',
       items: [{
-        path: '/news',
+        path: '/news?category=news',
         name: '公司新闻'
       }, {
-        path: '/news',
+        path: '/news?category=dynamic',
+        name: '组合动态'
+      }, {
+        path: '/news?category=point',
         name: '观点分享'
+      }, {
+        path: '/news?category=recruit',
+        name: '招聘'
       }]
     // }, {
     //   title: '盛资汇',
@@ -46,7 +52,7 @@ class Footer extends React.Component {
         path: '/about_us',
         name: '项目合作与BP通道'
       }, {
-        path: '/about_us',
+        path: '/news?category=recruit',
         name: '招聘'
       }, {
         path: '/about_us',

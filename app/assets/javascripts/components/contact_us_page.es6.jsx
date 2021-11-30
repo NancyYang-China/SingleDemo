@@ -18,7 +18,7 @@ class ContactUsPage extends BasePage {
       ) 
     }, {
       icon: "fa fa-users",
-      href: "/recruitment",
+      href: "/news?category=recruit",
       name: "招聘职位",
       children: (
         <div>
