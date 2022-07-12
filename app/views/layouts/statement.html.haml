@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{ :content => 'width=device-width, initial-scale=1, maximum-scale=1', :name => 'viewport' }/
+    %meta{:name => "turbolinks-cache-control", :content => "no-cache"}/
+    %title 盛宇投资
+    = csrf_meta_tags
+    = favicon_link_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    :css
+      body {
+        margin: 0;
+        display: flex;
+      }
+  %body
+    = react_component('Statement')

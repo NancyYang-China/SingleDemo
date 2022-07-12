@@ -1,0 +1,67 @@
+// Place all the styles related to the statement controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'mixins';
+
+.statement {
+  display: flex;
+  flex-direction: column;
+  .statement_image {
+    width: 100%;
+    height: 100%;  
+  }
+  .bottom_info {
+    bottom: 4px;
+    left: 0px;
+    right: 0px;
+    background: #fff;
+    z-index: 2;
+    .copyright {
+      font-size: 12px;
+      text-align: center;
+      line-height: 24px;
+      margin: 0 auto;
+      color: #939393;
+    }
+    .gab {
+      margin: 0 auto;
+      .gab_link {
+        display: inline-block;
+        text-decoration: none;
+        .gab_icon {
+          float:left;
+        }
+        .gab_title {
+          float: left;
+          height: 20px;
+          font-size: 12px;
+          line-height: 20px;
+          margin: 0px 0px 0px 5px;
+          color: #939393;
+        }
+      }
+    }
+  }
+}
+
+
+@include respond-to(mobile) {
+  .bottom_info {
+    .copyright {
+      margin: 0px;
+      font-size: 10px;
+    }
+    .gab {
+      .gab_link {
+        .gab_icon {
+          width: 16px;
+          height: 16px;
+        }
+        .gab_title {
+          line-height: 16px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

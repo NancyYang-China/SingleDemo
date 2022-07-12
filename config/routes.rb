@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   get :shengzihui, to: 'home#shengzihui', as: :shengzihui
   get :contact_us, to: 'contact_us#index', as: :contact_us
   get :recruitment, to: 'recruitment#index', as: :recruitment
+  get :statement, to: 'statement#index', as: :statement
 end

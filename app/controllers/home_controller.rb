@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   # before_action :authenticate_user!, :only => [:index]
 
   def statement
-    redirect_to '/statement.html'
+    redirect_to '/statement'
   end
 
   def index
