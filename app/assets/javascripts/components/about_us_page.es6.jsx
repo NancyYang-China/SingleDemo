@@ -8,6 +8,28 @@ class AboutUsPage extends React.Component {
       page: 0,
       hornorPage: 0,
     }
+    this.timer = null
+  }
+
+  autoScroll() {
+    console.log("Auro Scroll")
+    clearTimeout(this.timer)
+    this.timer = setTimeout(() => {
+      const hornorPage = this.state.hornorPage + 1
+      if (hornorPage < Math.ceil(this.props.hornors.length / 4)) {
+        this.setState({hornorPage}, this.autoScroll);
+      } else {
+        this.setState({ hornorPage: 0 }, this.autoScroll);
+      }
+    }, 5000)
+  }
+
+  componentDidMount(){
+    this.autoScroll()
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timer)
   }
 
   _renderMenu() {
