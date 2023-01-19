@@ -90,7 +90,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.8)
+    concurrent-ruby (1.1.10)
     connection_pool (2.2.1)
     devise (4.3.0)
       bcrypt (~> 3.0)
@@ -107,8 +107,8 @@ GEM
       railties (>= 3.2, < 5.2)
     font-awesome-sass (4.7.0)
       sass (>= 3.2)
-    globalid (0.4.0)
-      activesupport (>= 4.2.0)
+    globalid (1.0.1)
+      activesupport (>= 5.0)
     haml (5.0.1)
       temple (>= 0.8.0)
       tilt
@@ -159,7 +159,7 @@ GEM
     mime-types-data (3.2020.1104)
     mini_magick (4.7.0)
     mini_portile2 (2.4.0)
-    minitest (5.14.3)
+    minitest (5.17.0)
     multi_json (1.12.1)
     nested_form (0.3.2)
     net-scp (1.2.1)
@@ -285,7 +285,7 @@ GEM
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.3)
-    tzinfo (1.2.9)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
