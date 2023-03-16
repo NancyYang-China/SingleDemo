@@ -92,7 +92,7 @@ class Footer extends React.Component {
         {menusView}
         <div className="bottom_info">
           <p className="copyright">{`版权声明  Copyright@ 盛宇基金${new Date().getFullYear()} `}
-            <a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备06054643号-1</a>
+            <a className="gab_link" href="https://beian.miit.gov.cn/" target="_blank">沪ICP备06054643号-1</a>
           </p>
           <div className="gab flex-h flex-hc">
             <a className="gab_link" target="_blank" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402003542">
